@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #070B09;
+    color: #E8F3EC;
+  }
+}
+
+/* ================================
+   Shared Typography
+================================ */
+
+.main-heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 49.28px;
+  letter-spacing: -1.76px;
+  color: #E8F3EC;
+}
+
+.main-paragraph {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26.4px;
+  letter-spacing: -0.32px;
+  color: #9BAFA2;
+}
+
+.sub-heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 23px;
+  line-height: 28.75px;
+  letter-spacing: -0.92px;
+  color: #E8F3EC;
+}
+
+
+
+
+/* spinning animation code */
+@keyframes number-roll {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  15% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  85% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.animate-number-roll {
+  animation: number-roll 1.8s linear infinite;
+}
