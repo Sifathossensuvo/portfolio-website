@@ -72,3 +72,7 @@
 .animate-number-roll {
   animation: number-roll 1.8s linear infinite;
 }
+
+html{
+  scroll-behavior: smooth;
+}
