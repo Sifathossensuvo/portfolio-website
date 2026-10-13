@@ -53,7 +53,7 @@ export default function Contact() {
       </motion.p>
 
       {/* Main Grid Content */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
         
         {/* Left Column: Info & Social Links */}
         <motion.div
@@ -118,7 +118,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          className="bg-[#0F1713] border border-[#294535] rounded-[6px] p-6 sm:p-8 hover:border-[#00FF88]/30 transition-all relative"
+          className="bg-[#0F1713] border w-[570px] h-[415px] border-[#294535] rounded-[6px] p-[24px] hover:border-[#00FF88]/30 transition-all relative"
         >
           {submitted ? (
             <div className="py-16 text-center flex flex-col items-center justify-center space-y-4">
@@ -129,7 +129,7 @@ export default function Contact() {
               <p className="text-[#9CA3AF] text-sm">Thanks for reaching out. I'll get back to you soon.</p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-[19px]">
               {/* Name Field */}
               <div className="space-y-[10px]">
                 <label className="block font-mono text-[12px] text-[#9BAFA2] tracking-wider">
@@ -141,7 +141,7 @@ export default function Contact() {
                   placeholder="Your name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full bg-[#294535] border border-[#16291F] rounded-[4px] p-3 text-[##9BAFA2] placeholder-[#9BAFA2] text-[14px] focus:outline-none focus:border-[#00FF88] transition-colors"
+                  className="w-full h-[40px] bg-[#17261E] border border-[#16291F] rounded-[4px] p-3 text-[#9BAFA2] placeholder-[#9BAFA2] text-[14px] focus:outline-none focus:border-[#00FF88] transition-colors"
                 />
               </div>
 
@@ -156,7 +156,7 @@ export default function Contact() {
                   placeholder="you@company.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full bg-[#294535] border border-[#16291F] rounded-[4px] p-3 text-[#9BAFA2] placeholder-[#9BAFA2] text-[14px] focus:outline-none focus:border-[#00FF88] transition-colors"
+                  className="w-full h-[40px] bg-[#17261E] border border-[#16291F] rounded-[4px] p-3 text-[#9BAFA2] placeholder-[#9BAFA2] text-[14px] focus:outline-none focus:border-[#00FF88] transition-colors"
                 />
               </div>
 
@@ -171,14 +171,14 @@ export default function Contact() {
                   placeholder="What are you building?"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full bg-[#294535] border border-[#16291F] rounded-[4px] px-4 py-3 text-[#9BAFA2] placeholder-[#9BAFA2] text-[14px] focus:outline-none focus:border-[#00FF88] transition-colors resize-none"
+                  className="w-full h-[100px] bg-[#17261E] border border-[#16291F] rounded-[4px] px-4 py-3 text-[#9BAFA2] placeholder-[#9BAFA2] text-[14px] focus:outline-none focus:border-[#00FF88] transition-colors resize-none"
                 ></textarea>
               </div>
 
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-[#00FF88] text-[#070B09] font-bold text-[13px] py-3.5 px-6 rounded-[4px] flex items-center justify-center gap-2 hover:bg-[#00e078] transition-all shadow-[0_0_20px_rgba(0,255,136,0.2)]"
+                className="w-full h-[40px] bg-[#00FF88] text-[#070B09] font-bold text-[13px]  px-6 rounded-[4px] flex items-center justify-center gap-2 hover:bg-[#00e078] transition-all shadow-[0_0_20px_rgba(0,255,136,0.2)]"
               >
                 Send message <FiArrowUpRight className="w-4 h-4 stroke-[2.5]" />
               </button>

@@ -62,7 +62,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="main-paragraph mb-[23px]"
           >
-            I’m Ryan Reyner, a full-stack developer turning complex <br /> ideas into fast interfaces and dependable systems.
+            I’m Sifat Hossen, a mern-stack developer turning complex <br /> ideas into fast interfaces and dependable systems.
           </motion.p>
 
           {/* Action Buttons */}
@@ -93,11 +93,11 @@ export default function Hero() {
   transition={{ duration: 0.5, delay: 0.5 }}
   className="font-['JetBrains_Mono'] font-normal text-[12px] leading-[19.2px] tracking-[-0.24px] text-[#9BAFA2] flex flex-wrap items-center gap-3"
 >
-  <span>SINGAPORE, SG</span>
+  <span>BANGLADESH</span>
   <span className="">/</span>
   <span>REMOTE WORLDWIDE</span>
   <span className="">/</span>
-  <span>UTC+8</span>
+  <span>UTC+6</span>
 </motion.div>
         </motion.div>
 
@@ -122,10 +122,10 @@ export default function Hero() {
             {/* Card Footer Info */}
             <div className=" mt-[10px] px-1 ">
               <h3 className="font-mono text-[12px] font-normal text-[#00FF88] tracking-[-0.24px]">
-                RYAN REYNER / FULL-STACK ENGINEER
+                SIFAT HOSSEN / MERN-STACK ENGINEER
               </h3>
               <p className="font-mono text-[12px] font-normal text-[#9BAFA2] tracking-[-0.24px]">
-                PRODUCT MINDSET. SYSTEMS THINKING.
+                PRODUCT MINDSET. AI SPECIALIST.
               </p>
             </div>
           </div>

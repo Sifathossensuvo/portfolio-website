@@ -51,7 +51,7 @@ export default function Idea() {
           [
         </motion.span>
 
-        <span>05 / USE-CASES</span>
+        <span>05 / HOW-IT-WORKS</span>
 
         <motion.span
           animate={{ opacity: [1, 0.55, 1] }}
@@ -71,7 +71,7 @@ export default function Idea() {
         transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
         className="main-heading mb-[28px]"
       >
-        What can we build together?
+        A clear path from idea to release.
       </motion.h2>
 
       {/* Use Cases */}

@@ -9,6 +9,9 @@ import {
   useTransform,
 } from "framer-motion";
 
+import { Link } from "react-router-dom";
+
+import { ArrowUpRight } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
@@ -250,9 +253,25 @@ export default function Projects() {
 
 
       {/* Footer Disclaimer */}
-      <div className=" text-[12px] text-[#9BAFA2] tracking-[0.11em]">
-        OPEN-SOURCE SPOTLIGHT / CREDIT BELONGS TO THE ORIGINAL MAINTAINERS.
-      </div>
+<div className="flex flex-wrap items-center gap-3 text-[12px] text-[#9BAFA2] tracking-[0.11em]">
+  <span>
+    OPEN-SOURCE SPOTLIGHT / READY TO VIEW MY ALL PROJECTS?
+  </span>
+
+  <Link
+    to="/projects"
+    className="group inline-flex items-center gap-1.5 text-[#00FF88] transition-opacity duration-300 hover:opacity-80"
+  >
+    <span className="underline underline-offset-4 decoration-transparent transition-all duration-300 group-hover:decoration-[#00FF88]">
+      VIEW MORE
+    </span>
+
+    <ArrowUpRight
+      size={14}
+      className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+    />
+  </Link>
+</div>
 
     </section>
   );

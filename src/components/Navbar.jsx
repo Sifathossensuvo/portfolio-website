@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-
+import { Link } from "react-router-dom";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,7 +15,7 @@ export default function Navbar() {
         transition={{ duration: 0.4 }}
         className="font-['Space_Grotesk'] font-medium font-[Medium] text-[23px] [leading-trim:NONE] leading-[28.75px] tracking-[-0.46px] align-middle"
       >
-        <span className="text-[#00FF88]">&gt;</span> kernel.dev
+        <span className="text-[#00FF88]">&gt;</span> Shuvo.dev
       </motion.a>
 
       {/* Navigation Links */}
@@ -27,7 +27,13 @@ export default function Navbar() {
       >
         <a href="#about" className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">About</a>
         <a href="#stack" className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">Stack</a>
-        <a href="#projects" className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">Projects</a>
+<Link
+  to="/projects"
+  onClick={() => setIsMenuOpen(false)}
+  className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]"
+>
+  Projects
+</Link>
         <a href="#contact" className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">Contact</a>
       </motion.nav>
 
@@ -38,6 +44,7 @@ export default function Navbar() {
         transition={{ duration: 0.4 }}
         className="hidden md:block"
       >
+        
         <a
           href="#contact"
           style={{ width: '110px', height: '44px' }}
@@ -86,7 +93,13 @@ export default function Navbar() {
           >
             <a onClick={() => setIsMenuOpen(false)} href="#about" className="text-[#00FF88] hover:opacity-85 transition-opacity font-['Space_Grotesk'] text-[14px] tracking-[-0.24px]">About</a>
             <a onClick={() => setIsMenuOpen(false)} href="#stack" className="text-[#00FF88] hover:opacity-85 transition-opacity font-['Space_Grotesk'] text-[14px] tracking-[-0.24px]">Stack</a>
-            <a onClick={() => setIsMenuOpen(false)} href="#projects" className="text-[#00FF88] hover:opacity-85 transition-opacity font-['Space_Grotesk'] text-[14px] tracking-[-0.24px]">Projects</a>
+<Link
+  onClick={() => setIsMenuOpen(false)}
+  to="/projects"
+  className="text-[#00FF88] hover:opacity-85 transition-opacity font-['Space_Grotesk'] text-[14px] tracking-[-0.24px]"
+>
+  Projects
+</Link>
             <a onClick={() => setIsMenuOpen(false)} href="#contact" className="text-[#00FF88] hover:opacity-85 transition-opacity font-['Space_Grotesk'] text-[14px] tracking-[-0.24px]">Contact</a>
 
             <a

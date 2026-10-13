@@ -47,13 +47,12 @@ export default function About() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="lg:col-span-6 flex flex-col space-y-4 font-['Space_Grotesk'] text-[#9BAFA2] text-base leading-[1.7] text-[16px] font-medium"
         >
-          <p>
-            I work where product thinking meets engineering. I like <br /> clear requirements, small pull requests, and interfaces <br /> that feel effortless. From the first wireframe to the <br /> deployment pipeline, I make the 
-            pieces work together.
-          </p>
-          <p className="text-[#9BAFA2] text-[16px]">
-            Away from the keyboard: street photography, slow coffee, and finding the simplest route through a complicated problem.
-          </p>
+<p>
+  I build modern websites and AI-powered solutions. I focus <br /> on clean code, thoughtful design, and smart automation <br /> that helps businesses grow. From the first concept to <br /> launch, I turn ideas into digital experiences.
+</p>
+<p className="text-[#9BAFA2] text-[16px]">
+  Beyond coding: exploring AI innovations, experimenting with <br /> new technologies, and turning creative ideas into meaningful <br /> digital experiences.
+</p>
         </motion.div>
 
         {/* Right Column: Principles Card */}

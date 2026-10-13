@@ -1,59 +1,4 @@
-
-@media (hover: hover) and (pointer: fine) {
-  body,
-  body * {
-    cursor: none !important;
-  }
-
-  .fire-cursor {
-    position: fixed;
-    z-index: 99999;
-    width: 30px;
-    height: 30px;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    will-change: left, top, opacity;
-  }
-
-  .fire-glow {
-    position: absolute;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: radial-gradient(
-      circle,
-      rgba(255, 212, 59, 0.18) 0%,
-      rgba(255, 212, 59, 0.07) 40%,
-      transparent 72%
-    );
-    filter: blur(5px);
-    animation: fire-glow-pulse 1.2s ease-in-out infinite alternate;
-  }
-
-  .fireball-direction {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform-origin: 50% 50%;
-    will-change: transform;
-  }
-
-  .fireball-svg {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    overflow: visible;
-    filter: drop-shadow(0 0 3px rgba(255, 212, 59, 0.35));
-    transform-origin: 50% 50%;
-  }
-
-  /* Green smoke trail — unchanged */
+ @media (hover: hover) and (pointer: fine) {
   .green-smoke {
     position: fixed;
     z-index: 99998;
@@ -71,18 +16,6 @@
     transform: translate(-50%, -50%) scale(0.55);
     animation: green-smoke-fade 1000ms ease-out forwards;
     will-change: transform, opacity;
-  }
-
-  @keyframes fire-glow-pulse {
-    from {
-      opacity: 0.65;
-      transform: scale(0.85);
-    }
-
-    to {
-      opacity: 1;
-      transform: scale(1.18);
-    }
   }
 
   @keyframes green-smoke-fade {
@@ -106,9 +39,7 @@
 }
 
 @media (hover: none), (pointer: coarse) {
-  .fire-cursor,
   .green-smoke {
     display: none;
   }
 }
-

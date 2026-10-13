@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 const hackerCommandsQueue = [
   { type: 'command', text: '$ whoami' },
-  { type: 'output', text: '> Full-stack developer. Curious by default.' },
+  { type: 'output', text: '> Mern-stack developer. Curious by default.' },
   { type: 'command', text: '$ cat mission.txt' },
   { type: 'output', text: '> Build useful things. Keep the system simple.' },
   { type: 'command', text: '$ status' },
   { type: 'output', text: '> Ready for your next challenge.' },
-  { type: 'command', text: '$ ping kernel.dev -c 1' },
+  { type: 'command', text: '$ ping shuvo.dev -c 1' },
   { type: 'output', text: '> 64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.042 ms' },
   { type: 'command', text: '$ security --audit' },
   { type: 'output', text: '> All systems operational. Zero vulnerabilities detected.' },
@@ -16,7 +16,7 @@ const hackerCommandsQueue = [
   { type: 'output', text: '> On branch main. Your branch is up to date.' },
   { type: 'command', text: '$ docker ps --active' },
   { type: 'output', text: '> CONTAINER ID   IMAGE          STATUS' },
-  { type: 'output', text: '> 4a9f8b1c2d3e   kernel-core    Up 42 days (healthy)' }
+  { type: 'output', text: '> 4a9f8b1c2d3e   shuvo-core    Up 42 days (healthy)' }
 ];
 
 export default function ConsoleSection() {
@@ -80,7 +80,7 @@ export default function ConsoleSection() {
   }, []);
 
   const stats = [
-    { number: '01', label: 'ENGINEER / END-TO-END' },
+    { number: '01', label: 'MERNSTACK / END-TO-END' },
     { number: '03', label: 'PROJECTS TO EXPLORE' },
     { number: '06', label: 'STACK DISCIPLINES' },
     { number: '∞', label: 'CURIOSITY / ALWAYS ON' }
@@ -104,7 +104,7 @@ export default function ConsoleSection() {
             <span className="w-3 h-3 rounded-full bg-[#27C93F] inline-block"></span>
           </div>
           <div className="font-mono text-xs text-[#6B7280] tracking-wider">
-            ryan@kernel: ~/portfolio
+            sifat@shuvo: ~/portfolio
           </div>
           <div className="w-12"></div>
         </div>

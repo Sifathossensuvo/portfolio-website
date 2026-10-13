@@ -2,38 +2,44 @@ import React, { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
 export default function Stack() {
-  const stackCards = [
-    {
-      num: '01',
-      title: 'Front-end',
-      description: 'React · Next.js · TypeScript. Accessible interfaces, reusable patterns, and responsive systems.'
-    },
-    {
-      num: '02',
-      title: 'Back-end',
-      description: 'Node.js · Python · PostgreSQL. REST and GraphQL APIs, authentication flows, and data modeling.'
-    },
-    {
-      num: '03',
-      title: 'DevOps',
-      description: 'Docker · GitHub Actions · Linux. CI/CD, cloud deployments, logs, and observability.'
-    },
-    {
-      num: '04',
-      title: 'Tools & languages',
-      description: 'Git · VS Code · Figma · Framer · Claude · ChatGPT Playwright. JavaScript, TypeScript, Python, and SQL.'
-    },
-    {
-      num: '05',
-      title: 'Engineering',
-      description: 'Design systems, API architecture, testing, performance profiling, documentation, and code review.'
-    },
-    {
-      num: '06',
-      title: 'Principles in practice',
-      description: 'Progressive enhancement, reusable boundaries, and small changes with clear ownership.'
-    }
-  ];
+const stackCards = [
+  {
+    num: '01',
+    title: 'Front-end',
+    description:
+      'HTML · CSS · JavaScript · React · Tailwind CSS · NextJS. Responsive UI, reusable components, and animations.'
+  },
+  {
+    num: '02',
+    title: 'Back-end',
+    description:
+      'Node.js · Express.js · MongoDB. REST APIs, CRUD operations, and authentication.'
+  },
+  {
+    num: '03',
+    title: 'AI Solutions',
+    description:
+      'AI API Integration · OpenRouter · Prompt Engineering. Building AI-powered web applications.'
+  },
+  {
+    num: '04',
+    title: 'Tools & Technologies',
+    description:
+      'Git · GitHub · VS Code · Postman · Figma · Vercel. Design, development, and deployment.'
+  },
+  {
+    num: '05',
+    title: 'UI/UX & Animation',
+    description:
+      'Figma · Framer Motion · Three.js. Interactive interfaces, smooth animations, and visual design.'
+  },
+  {
+    num: '06',
+    title: 'Engineering',
+    description:
+      'Clean code · Reusable components · Responsive design. Maintainable and user-focused solutions.'
+  }
+];
 
   return (
     <section id="stack" className="w-full  mx-auto  py-[64px] relative">
