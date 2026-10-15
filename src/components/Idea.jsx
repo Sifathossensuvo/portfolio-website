@@ -26,7 +26,7 @@ export default function Idea() {
   return (
     <section
       id="use-cases"
-      className="w-full max-w-[1120px] mx-auto mt-[65px] relative isolate"
+      className="w-full max-w-[1120px] mx-auto mt-[65px] relative isolate overflow-x-clip"
     >
 {/* Top Border Line */}
 

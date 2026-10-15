@@ -78,7 +78,7 @@ export default function Contact() {
       </motion.p>
 
       {/* Main Grid Content */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-[0px] items-start">
         
         {/* Left Column: Info & Social Links */}
         <motion.div
@@ -143,7 +143,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          className="bg-[#0F1713] border w-[570px] h-[415px] border-[#294535] rounded-[6px] p-[24px] hover:border-[#00FF88]/30 transition-all relative"
+          className="bg-[#0F1713] border md:w-[560px] md:h-[415px] border-[#294535] rounded-[6px] p-[24px] hover:border-[#00FF88]/30 transition-all relative"
         >
           {submitted ? (
             <div className="py-16 text-center flex flex-col items-center justify-center space-y-4">

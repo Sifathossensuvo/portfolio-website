@@ -6,8 +6,19 @@
     font-family: 'Space Grotesk', sans-serif;
     background-color: #070B09;
     color: #E8F3EC;
+    
+  
   }
 }
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 
 /* ================================
    Shared Typography
