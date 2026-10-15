@@ -310,7 +310,39 @@ export default function AllProjects() {
   githubUrl: 'https://github.com/Sifathossensuvo/',
   mockupType: 'renu-pet-care',
   fullDetails: 'Renu is a pet care website designed to provide a welcoming online experience for pet lovers. Built with HTML, Tailwind CSS, and JavaScript, it focuses on clean layouts, responsive design, and an approachable interface for presenting pet care-related content and services.'
-}
+},
+
+{
+  id: 'knowledge-cafe',
+  badge: '~/builds/knowledge-cafe',
+  category: 'ARTICLE & READING PLATFORM',
+  title: 'Knowledge Cafe',
+  description:
+    'A practice project for discovering and reading articles, with a bookmark feature to save articles for later.',
+  stack: ['React', 'React Router', 'API Fetch'],
+  liveUrl: 'https://kcafe1.netlify.app/',
+  githubUrl: '',
+  mockupType: 'knowledge-cafe',
+  fullDetails:
+    'A simple article-reading website built for practice using React, React Router, and API fetching. Users can read articles and bookmark their favorites for later.',
+},
+
+
+{
+  id: 'ultra-phone',
+  badge: '~/builds/ultra-phone',
+  category: 'ANIMATED PHONE SHOWCASE',
+  title: 'Ultra Phone',
+  description:
+    'An animated phone showcase website where users can explore smartphones and add their favorite devices to the cart.',
+  stack: ['HTML5', 'Tailwind CSS', 'JavaScript'],
+  liveUrl: 'https://ultra-phone.netlify.app/',
+  githubUrl: '',
+  mockupType: 'ultra-phone',
+  fullDetails:
+    'A practice project focused on animated UI and interactive shopping experiences. Users can explore phone products and add items to their cart, built with HTML, Tailwind CSS, and JavaScript.',
+},
+
 
   ];
 
@@ -661,6 +693,37 @@ export default function AllProjects() {
     <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ HAPPY PAWS ]</div>
   </div>
 )}
+
+{project.mockupType === 'knowledge-cafe' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">
+      KNOWLEDGE / CAFE
+    </div>
+    <div className="text-[#9CA3AF]">
+      read → learn → bookmark
+    </div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">
+      [ READ & SAVE ]
+    </div>
+  </div>
+)}
+
+
+{project.mockupType === 'ultra-phone' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">
+      ULTRA / PHONE
+    </div>
+    <div className="text-[#9CA3AF]">
+      discover → explore → add to cart
+    </div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">
+      [ SHOP DEVICES ]
+    </div>
+  </div>
+)}
+
+
                     </div>
 
                     {/* Category */}

@@ -4,19 +4,19 @@ import { motion } from 'framer-motion';
 export default function Experience() {
   const experiences = [
     {
-      period: '2023 — NOW',
+      period: '2026 — NOW',
       title: 'Independent / Product engineer',
       description: (<>
       Partnering with small teams on web products, internal tools, <br /> and design systems. Scope, implementation, review, and handoff.
       </>)
     },
     {
-      period: '2021 — 2023',
+      period: '2024 — 2025',
       title: 'Studio practice / Full-stack development',
       description: 'Built front-end patterns, API integrations, and release workflows through collaborative product projects.'
     },
     {
-      period: '2017 — 2021',
+      period: '2023 — 2024',
       title: 'Computer science / Engineering foundation',
        description: (<>
      Algorithms, databases, distributed systems, and human- <br /> computer interaction. Continued learning through hands-on builds.
