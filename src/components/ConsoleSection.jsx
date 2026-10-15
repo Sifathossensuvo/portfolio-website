@@ -81,7 +81,7 @@ export default function ConsoleSection() {
 
   const stats = [
     { number: '01', label: 'MERNSTACK / END-TO-END' },
-    { number: '03', label: 'PROJECTS TO EXPLORE' },
+    { number: '26', label: 'PROJECTS TO EXPLORE' },
     { number: '06', label: 'STACK DISCIPLINES' },
     { number: '∞', label: 'CURIOSITY / ALWAYS ON' }
   ];
