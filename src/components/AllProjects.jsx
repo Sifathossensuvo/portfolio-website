@@ -109,104 +109,144 @@ export default function AllProjects() {
   mockupType: 'ninja-portfolio',
   fullDetails: 'A highly animated, ninja-inspired personal portfolio featuring a bold red visual identity, immersive interactions, and cinematic motion effects. Built with HTML, CSS, JavaScript, and additional web technologies, the project combines creative storytelling with a distinctive visual experience.'
 },
+{
+  id: 'careerhub-bd',
+  badge: '~/builds/careerhub',
+  category: 'FULL-STACK JOB PORTAL',
+  title: 'CareerHub BD',
+  description: 'A full-stack recruitment platform connecting job seekers and companies through job postings, online applications, and personalized profiles.',
+  stack: 'React / Node.js / Express.js / MongoDB',
+  liveUrl: 'https://careerhub-shuvo.onrender.com',
+  githubUrl: 'https://github.com/Sifathossensuvo/careerhub',
+  mockupType: 'careerhub-bd',
+  fullDetails: 'CareerHub BD is a full-stack job portal designed to connect job seekers with employers in one platform. Built with React, Node.js, Express.js, MongoDB, and additional technologies, it enables users to create profiles, explore job opportunities, publish job listings, and apply for positions. The platform brings job discovery and recruitment workflows together in a single experience.'
+},
+{
+  id: 'devhub',
+  badge: '~/builds/devhub',
+  category: 'DEVELOPER RESOURCE PLATFORM',
+  title: 'DevHub',
+  description: 'An all-in-one developer platform offering error solutions, articles, roadmaps, cheat sheets, code snippets, and curated learning resources.',
+  stack: 'React / Node.js / Express.js / Tailwind CSS',
+  liveUrl: 'https://dev-hub-shuvo.netlify.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/DevUndifind',
+  mockupType: 'devhub',
+  fullDetails: 'DevHub is a developer-focused resource platform built to make programming easier and more accessible. Developed with React, Node.js, Express.js, Tailwind CSS, and additional technologies, it brings together error-solving resources, technical articles, learning roadmaps, cheat sheets, reusable code snippets, and useful developer tools in one clean interface.'
+},
+{
+  id: 'movie-explorer',
+  badge: '~/builds/movie-explorer',
+  category: 'ANIMATED MOVIE DISCOVERY',
+  title: 'Movie Explorer',
+  description: 'An anime-inspired movie discovery experience with a stunning interface, smooth animations, movie search, and detailed movie information.',
+  stack: 'React / Tailwind CSS / TVMaze API',
+  liveUrl: 'https://movie-explorer-eta-orpin.vercel.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/movie-explorer',
+  mockupType: 'movie-explorer',
+  fullDetails: 'Movie Explorer is a visually engaging movie discovery application featuring an anime-inspired design, beautiful animations, and a responsive interface. Built with React, Tailwind CSS, and the TVMaze API, it allows users to search for movies and shows, explore available titles, and view detailed information through an immersive browsing experience.'
+},
+{
+  id: 'legendary-shuvo',
+  badge: '~/builds/legendary-shuvo',
+  category: 'ANIME-INSPIRED CREATIVE PORTFOLIO',
+  title: 'Legendary Shuvo',
+  description: 'An anime-inspired personal portfolio featuring cinematic animations, immersive visuals, and a bold, world-class creative experience.',
+  stack: 'React / Tailwind CSS / Animation Libraries',
+  liveUrl: 'https://shuvo-on-top.vercel.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/legendary-portfolio',
+  mockupType: 'legendary-shuvo',
+  fullDetails: 'Legendary Shuvo is an anime-inspired personal portfolio built around bold visual storytelling, immersive animations, and a distinctive creative identity. Developed with React, Tailwind CSS, animation libraries, and additional web technologies, it focuses on cinematic transitions, engaging interactions, and a polished, memorable user experience.'
+},
+{
+  id: 'shuvo-meet',
+  badge: '~/builds/shuvo-meet',
+  category: 'REAL-TIME MEETING PLATFORM',
+  title: 'Shuvo Meet',
+  description: 'A modern video meeting platform featuring real-time communication, screen sharing, and a seamless, user-friendly meeting experience.',
+  stack: 'React / Node.js / Express.js / WebRTC',
+  liveUrl: 'https://shuvo-meet.vercel.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/shuvo-meet',
+  mockupType: 'shuvo-meet',
+  fullDetails: 'Shuvo Meet is a full-stack meeting platform designed to deliver a smooth and engaging online communication experience. Built with React, Node.js, Express.js, WebRTC, and additional technologies, it supports real-time meetings and screen sharing through a modern, user-focused interface.'
+},
+   {
+  id: 'zeryxa-team',
+  badge: '~/builds/zeryxa-team',
+  category: 'DIGITAL AGENCY PORTFOLIO',
+  title: 'Zeryxa Team',
+  description: 'A modern demo website for a digital agency, featuring polished visuals, responsive layouts, and engaging animations.',
+  stack: 'React / Tailwind CSS / Node.js',
+  liveUrl: 'https://zeryxateam.netlify.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/zeryxa-team-portfolio',
+  mockupType: 'zeryxa-team',
+  fullDetails: 'Zeryxa Team is a demo digital agency portfolio created to showcase a modern agency brand through polished UI design, responsive layouts, and engaging visual interactions. Built with React, Tailwind CSS, Node.js, and additional technologies, the project also incorporates AI tools into the development workflow to support the creative and implementation process.'
+},
+
+{
+  id: 'mr-shuvo-portfolio',
+  badge: '~/builds/mr-shuvo-portfolio',
+  category: 'PERSONAL PORTFOLIO',
+  title: 'Mr. Shuvo',
+  description: 'An early personal portfolio project featuring beautiful animations, smooth transitions, and a visually engaging design.',
+  stack: 'React / Tailwind CSS / Framer Motion',
+  liveUrl: 'https://mrshuvo.netlify.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo',
+  mockupType: 'mr-shuvo-portfolio',
+  fullDetails: 'Mr. Shuvo is an earlier personal portfolio website created as a practice project to explore modern frontend development and animation. Built with React, Tailwind CSS, and Framer Motion, it focuses on visually engaging layouts, smooth transitions, and interactive motion effects.'
+},
+{
+  id: 'sh-homepage',
+  badge: '~/builds/sh-homepage',
+  category: 'CUSTOM BROWSER HOMEPAGE',
+  title: 'SH Homepage',
+  description: 'A personalized browser homepage with quick search, handy resources, and a convenient starting point for everyday browsing.',
+  stack: 'React / Tailwind CSS / Framer Motion',
+  liveUrl: 'https://shhomepage.netlify.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo',
+  mockupType: 'sh-homepage',
+  fullDetails: 'SH Homepage is a custom browser homepage designed to make everyday browsing more convenient. It provides quick search access and useful resources in one place, helping users get started quickly. Users can also set it as their browser homepage or startup page for a more personalized browsing experience.'
+},
+{
+  id: 'select-xi',
+  badge: '~/builds/select-xi',
+  category: 'CRICKET TEAM MANAGEMENT',
+  title: 'Select XI',
+  description: 'An interactive cricket team management app where users can earn coins, hire cricket players, manage their squad, and remove players.',
+  stack: 'React / Tailwind CSS / API Integration',
+  liveUrl: 'https://coherent-children.surge.sh/',
+  githubUrl: 'https://github.com/Sifathossensuvo/select-xi',
+  mockupType: 'select-xi',
+  fullDetails: 'Select XI is a cricket team management practice project built with React, Tailwind CSS, and API integration. Users can explore available cricket players, manage their coin balance, hire players, build a squad, and remove players as needed. The project helped develop practical skills in interactive UI design, state management, and working with API data.'
+},
+
+{
+  id: 'assignment-one',
+  badge: '~/builds/assignment-one',
+  category: 'FIRST WEB DEVELOPMENT PROJECT',
+  title: 'My First Website',
+  description: 'A motivational website built with HTML and CSS that marks the beginning of my web development journey.',
+  stack: 'HTML5 / CSS3',
+  liveUrl: 'https://sifathossensuvo.github.io/assignment-one/',
+  githubUrl: 'https://github.com/Sifathossensuvo/assignment-one',
+  mockupType: 'assignment-one',
+  fullDetails: 'My First Website is a motivational project created during my web development course. Built with HTML and CSS, it represents the starting point of my journey as a developer. More than a simple practice project, it reflects the curiosity, determination, and first steps that began my path toward building larger and more ambitious web experiences.'
+},
+
+{
+  id: 'book-vibe',
+  badge: '~/builds/book-vibe',
+  category: 'BOOK DISCOVERY PLATFORM',
+  title: 'Book Vibe',
+  description: 'A responsive book discovery platform where readers can explore books, view details, manage reading lists, and save wishlist favorites.',
+  stack: 'React / Tailwind CSS / React Router',
+  liveUrl: 'https://book-vibe-poka.netlify.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/book-vibe',
+  mockupType: 'book-vibe',
+  fullDetails: 'Book Vibe is a responsive book discovery application built with React, Tailwind CSS, and React Router. Users can browse a collection of books, explore detailed book information, add titles to their Read List or Wishlist, and avoid duplicate entries. It also features React Toastify notifications and Local Storage persistence to keep saved book data available between visits.'
+},
 
 
-    {
-      id: 'nexus-proxy',
-      badge: '~/builds/nexus-proxy',
-      category: 'NETWORKING',
-      title: 'Nexus API Gateway',
-      description: 'High-throughput reverse proxy with rate limiting, JWT validation, and load balancing.',
-      stack: 'Go / Redis / Docker',
-      liveUrl: 'https://github.com',
-      githubUrl: 'https://github.com',
-      mockupType: 'terminal',
-      fullDetails: 'Handles over 100k requests/sec with minimal memory footprint. Features dynamic upstream routing, circuit breaking, and Prometheus telemetry built-in.'
-    },
-    {
-      id: 'quantum-auth',
-      badge: '~/builds/quantum-auth',
-      category: 'SECURITY',
-      title: 'QuantumAuth',
-      description: 'Passwordless cryptographic authentication flow using WebAuthn and passkeys.',
-      stack: 'TypeScript / WebCrypto / Node.js',
-      liveUrl: 'https://github.com',
-      githubUrl: 'https://github.com',
-      mockupType: 'ai',
-      fullDetails: 'Secure biometric authentication wrapper providing frictionless login experiences across mobile and desktop browsers without storing server-side password hashes.'
-    },
-    {
-      id: 'orbit-cms',
-      badge: '~/builds/orbit-cms',
-      category: 'CONTENT MANAGEMENT',
-      title: 'Orbit Headless CMS',
-      description: 'Blazing fast content repository with GraphQL API and real-time collaboration.',
-      stack: 'Next.js / PostgreSQL / Prisma',
-      liveUrl: 'https://github.com',
-      githubUrl: 'https://github.com',
-      mockupType: 'commerce',
-      fullDetails: 'Designed for editorial speed with version-controlled content blocks, asset optimization pipelines, and role-based access control workflows.'
-    },
-    {
-      id: 'vector-search',
-      badge: '~/builds/vector-search',
-      category: 'DATA SCIENCE',
-      title: 'VectorEngine',
-      description: 'Embedding similarity search engine for semantic document retrieval.',
-      stack: 'Python / NumPy / FastAPI',
-      liveUrl: 'https://github.com',
-      githubUrl: 'https://github.com',
-      mockupType: 'database',
-      fullDetails: 'Optimized vector similarity index capable of querying millions of high-dimensional embeddings with sub-10ms latency.'
-    },
-    {
-      id: 'pulse-monitor',
-      badge: '~/builds/pulse-monitor',
-      category: 'DEV_OPS',
-      title: 'Pulse Uptime',
-      description: 'Distributed server health checker with automated Discord/Telegram alerts.',
-      stack: 'Node.js / SQLite / Tailwind',
-      liveUrl: 'https://github.com',
-      githubUrl: 'https://github.com',
-      mockupType: 'terminal',
-      fullDetails: 'Lightweight monitoring agent that pings endpoint health across multiple geographic regions and logs response latency trends.'
-    },
-    {
-      id: 'stream-hub',
-      badge: '~/builds/stream-hub',
-      category: 'MEDIA & STREAMING',
-      title: 'StreamHub',
-      description: 'WebRTC based peer-to-peer live broadcasting and chat platform.',
-      stack: 'WebRTC / Socket.io / React',
-      liveUrl: 'https://github.com',
-      githubUrl: 'https://github.com',
-      mockupType: 'canvas',
-      fullDetails: 'Low-latency video streaming architecture designed for interactive workshops, virtual classrooms, and community hangouts.'
-    },
-    {
-      id: 'frost-ui',
-      badge: '~/builds/frost-ui',
-      category: 'DESIGN SYSTEM',
-      title: 'Frost Design System',
-      description: 'Accessible dark-mode component library built with Tailwind and Radix primitives.',
-      stack: 'React / Tailwind / Radix UI',
-      liveUrl: 'https://github.com',
-      githubUrl: 'https://github.com',
-      mockupType: 'ai',
-      fullDetails: 'Fully WCAG AA compliant component suite optimized for developer productivity, custom theming, and keyboard navigation.'
-    },
-    {
-      id: 'apex-metrics',
-      badge: '~/builds/apex-metrics',
-      category: 'ANALYTICS',
-      title: 'Apex Metrics',
-      description: 'Privacy-first web analytics platform without cookies or intrusive trackers.',
-      stack: 'Go / ClickHouse / Vue.js',
-      liveUrl: 'https://github.com',
-      githubUrl: 'https://github.com',
-      mockupType: 'database',
-      fullDetails: 'Aggregates page views and user flows anonymously while maintaining absolute compliance with GDPR and CCPA privacy standards.'
-    }
+
   ];
 
   // Pagination state: display 12 items initially, load 12 more on click
@@ -233,8 +273,8 @@ export default function AllProjects() {
           to="/" 
           className="inline-flex items-center gap-2 font-mono text-xs text-[#00FF88] hover:text-[#00e078] transition-all group"
         >
-          <FiArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
-          <span className="tracking-[0.15em] font-semibold">[ BACK TO HOME ]</span>
+          <FiArrowLeft className="w-3 h-3 transition-transform group-hover:-translate-x-1" />
+          <span className="tracking-[0.15em] font-semibold">BACK TO HOME</span>
         </Link>
       </motion.div>
 
@@ -347,8 +387,6 @@ export default function AllProjects() {
 )}
 
 
-
-
 {project.mockupType === 'younus-portfolio' && (
   <div className="w-full font-mono text-[10px] text-center space-y-2">
     <div className="text-[#E8F3EC] font-semibold tracking-wider">
@@ -431,13 +469,96 @@ export default function AllProjects() {
   </div>
 )}
 
+{project.mockupType === 'careerhub-bd' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">CAREERHUB / BD</div>
+    <div className="text-[#9CA3AF]">discover → apply → grow</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ FIND OPPORTUNITIES ]</div>
+  </div>
+)}
 
-                      {project.mockupType === 'database' && (
-                        <div className="w-full font-mono text-[10px] text-[#00FF88] text-center space-y-1">
-                          <div>[ ETHER_DB : ACTIVE ]</div>
-                          <div className="text-[#9CA3AF] text-[9px]">latency: 0.4ms (edge)</div>
-                        </div>
-                      )}
+{project.mockupType === 'devhub' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">DEVHUB / RESOURCES</div>
+    <div className="text-[#9CA3AF]">debug → learn → build</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ SOLVE & GROW ]</div>
+  </div>
+)}
+
+{project.mockupType === 'movie-explorer' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">MOVIE / EXPLORER</div>
+    <div className="text-[#9CA3AF]">search → discover → explore</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ START EXPLORING ]</div>
+  </div>
+)}
+
+{project.mockupType === 'legendary-shuvo' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">LEGENDARY / SHUVO</div>
+    <div className="text-[#9CA3AF]">dream → evolve → become legendary</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ ENTER THE WORLD ]</div>
+  </div>
+)}
+
+{project.mockupType === 'shuvo-meet' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">SHUVO / MEET</div>
+    <div className="text-[#9CA3AF]">connect → collaborate → share</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ JOIN MEETING ]</div>
+  </div>
+)}
+
+{project.mockupType === 'zeryxa-team' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">ZERYXA / STUDIO</div>
+    <div className="text-[#9CA3AF]">design → develop → deliver</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ EXPLORE AGENCY ]</div>
+  </div>
+)}
+
+{project.mockupType === 'mr-shuvo-portfolio' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">MR / SHUVO</div>
+    <div className="text-[#9CA3AF]">explore → create → evolve</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ VIEW PORTFOLIO ]</div>
+  </div>
+)}
+
+{project.mockupType === 'sh-homepage' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">SH / HOMEPAGE</div>
+    <div className="text-[#9CA3AF]">search → discover → access</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ QUICK ACCESS ]</div>
+  </div>
+)}
+
+{project.mockupType === 'select-xi' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">SELECT / XI</div>
+    <div className="text-[#9CA3AF]">earn coins → hire → build squad</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ MANAGE TEAM ]</div>
+  </div>
+)}
+
+{project.mockupType === 'assignment-one' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">THE BEGINNING / 01</div>
+    <div className="text-[#9CA3AF]">learn → build → grow</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ JOURNEY STARTED ]</div>
+  </div>
+)}
+
+{project.mockupType === 'book-vibe' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">BOOK / VIBE</div>
+    <div className="text-[#9CA3AF]">discover → read → wishlist</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ EXPLORE BOOKS ]</div>
+  </div>
+)}
+
+
+
                     </div>
 
                     {/* Category */}
@@ -490,6 +611,7 @@ export default function AllProjects() {
           return <ProjectCard key={project.id} />;
         })}
       </div>
+      
 
       {/* Load More Button */}
       {hasMore && (
