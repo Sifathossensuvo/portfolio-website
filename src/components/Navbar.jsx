@@ -1,22 +1,64 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!location.hash) return;
+
+    const id = location.hash.substring(1);
+    let attempts = 0;
+    let frameId;
+
+    const scrollToSection = () => {
+      const element = document.getElementById(id);
+
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+
+      if (attempts < 30) {
+        attempts++;
+        frameId = requestAnimationFrame(scrollToSection);
+      }
+    };
+
+    frameId = requestAnimationFrame(scrollToSection);
+
+    return () => cancelAnimationFrame(frameId);
+  }, [location.pathname, location.hash]);
+
+  const handleSectionClick = (e, id) => {
+    e.preventDefault();
+    setIsMenuOpen(false);
+
+    if (location.pathname !== '/') {
+      navigate('/#' + id);
+      return;
+    }
+
+    window.history.replaceState(null, '', '/#' + id);
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <header className="relative mx-auto flex w-full max-w-[1120px] items-center justify-between px-4 pt-[22px] sm:px-6 lg:px-0">
       {/* Logo */}
-      <motion.a 
-        href="#"
+     <Link to="/"><motion.a 
+      
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4 }}
         className="font-['Space_Grotesk'] font-medium font-[Medium] text-[23px] [leading-trim:NONE] leading-[28.75px] tracking-[-0.46px] align-middle"
       >
         <span className="text-[#00FF88]">&gt;</span> Shuvo.dev
-      </motion.a>
+      </motion.a></Link>
 
       {/* Navigation Links */}
       <motion.nav 
@@ -25,8 +67,8 @@ export default function Navbar() {
         transition={{ duration: 0.4, delay: 0.1 }}
         className="hidden md:flex items-center gap-8 font-['Space_Grotesk'] text-sm md:text-base font-medium"
       >
-        <a href="#about" className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">About</a>
-        <a href="#stack" className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">Stack</a>
+        <a href="/#about" onClick={(e) => handleSectionClick(e, 'about')} className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">About</a>
+        <a href="/#stack" onClick={(e) => handleSectionClick(e, 'stack')} className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">Stack</a>
 <Link
   to="/projects"
   onClick={() => setIsMenuOpen(false)}
@@ -34,7 +76,7 @@ export default function Navbar() {
 >
   Projects
 </Link>
-        <a href="#contact" className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">Contact</a>
+        <a href="/#contact" onClick={(e) => handleSectionClick(e, 'contact')} className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">Contact</a>
       </motion.nav>
 
       {/* Let's talk button */}
@@ -46,7 +88,8 @@ export default function Navbar() {
       >
         
         <a
-          href="#contact"
+          href="/#contact"
+          onClick={(e) => handleSectionClick(e, 'contact')}
           style={{ width: '110px', height: '44px' }}
           className="bg-[#00FF88] text-[#070B09] font-['Space_Grotesk'] font-bold font-[Bold] text-[13px] [leading-trim:NONE] leading-[15.6px] tracking-[-0.26px] align-middle rounded-[4px] flex items-center justify-center gap-1 hover:opacity-90 transition-opacity shadow-[0_0_15px_rgba(0,255,136,0.3)]"
         >
@@ -91,8 +134,8 @@ export default function Navbar() {
             transition={{ duration: 0.2 }}
             className="absolute left-4 right-4 top-[78px] z-[9999] flex flex-col gap-5 rounded-md border border-[#00FF88]/20 bg-[#070B09] p-5 shadow-[0_0_25px_rgba(0,255,136,0.08)] sm:left-6 sm:right-6 md:hidden"
           >
-            <a onClick={() => setIsMenuOpen(false)} href="#about" className="text-[#00FF88] hover:opacity-85 transition-opacity font-['Space_Grotesk'] text-[14px] tracking-[-0.24px]">About</a>
-            <a onClick={() => setIsMenuOpen(false)} href="#stack" className="text-[#00FF88] hover:opacity-85 transition-opacity font-['Space_Grotesk'] text-[14px] tracking-[-0.24px]">Stack</a>
+            <a onClick={(e) => handleSectionClick(e, 'about')} href="/#about" className="text-[#00FF88] hover:opacity-85 transition-opacity font-['Space_Grotesk'] text-[14px] tracking-[-0.24px]">About</a>
+            <a onClick={(e) => handleSectionClick(e, 'stack')} href="/#stack" className="text-[#00FF88] hover:opacity-85 transition-opacity font-['Space_Grotesk'] text-[14px] tracking-[-0.24px]">Stack</a>
 <Link
   onClick={() => setIsMenuOpen(false)}
   to="/projects"
@@ -100,11 +143,11 @@ export default function Navbar() {
 >
   Projects
 </Link>
-            <a onClick={() => setIsMenuOpen(false)} href="#contact" className="text-[#00FF88] hover:opacity-85 transition-opacity font-['Space_Grotesk'] text-[14px] tracking-[-0.24px]">Contact</a>
+            <a onClick={(e) => handleSectionClick(e, 'contact')} href="/#contact" className="text-[#00FF88] hover:opacity-85 transition-opacity font-['Space_Grotesk'] text-[14px] tracking-[-0.24px]">Contact</a>
 
             <a
-              onClick={() => setIsMenuOpen(false)}
-              href="#contact"
+              onClick={(e) => handleSectionClick(e, 'contact')}
+              href="/#contact"
               className="mt-1 flex h-[44px] w-full items-center justify-center gap-1 rounded-[4px] bg-[#00FF88] font-['Space_Grotesk'] text-[13px] font-bold tracking-[-0.26px] text-[#070B09] shadow-[0_0_15px_rgba(0,255,136,0.3)] transition-opacity hover:opacity-90"
             >
               Let's talk <span className="text-xs">↗</span>

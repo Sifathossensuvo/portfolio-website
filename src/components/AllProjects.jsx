@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 export default function AllProjects() {
   // Extended dummy project pool to demonstrate Load More functionality (total 18 items)
   const masterProjects = [
+
 {
   id: 'code-ninja-ai',
   badge: '~/builds/code-ninja-ai',
@@ -23,13 +24,26 @@ export default function AllProjects() {
   id: 'md-younus-portfolio',
   badge: '~/builds/md-younus-portfolio',
   category: 'UI/UX DESIGN PORTFOLIO',
-  title: 'Md YOUNUS PORTFOLIO',
+  title: 'MD YOUNUS PORTFOLIO',
   description: 'A visually immersive portfolio for a UI/UX designer, featuring elegant interfaces, fluid animations, and a premium interactive experience.',
   stack: 'React / Node.js / Tailwind CSS / Framer Motion',
   liveUrl: 'https://younus-uiux.vercel.app',
   githubUrl: 'https://github.com/Sifathossensuvo/md-younus',
   mockupType: 'younus-portfolio',
   fullDetails: 'A complete, highly animated portfolio website designed for UI/UX designer Md Younus. Built with React, Node.js, Tailwind CSS, Framer Motion, and additional technologies, the project focuses on visual storytelling, polished interactions, smooth transitions, and a memorable user experience.'
+},
+
+{
+  id: 'murmur-messenger',
+  badge: '~/builds/murmur-messenger',
+  category: 'REAL-TIME MESSAGING PLATFORM',
+  title: 'MURMUR MESSENGER',
+  description: 'A full-stack real-time messaging platform featuring personal chats, group conversations, media sharing, emoji reactions, active status, and customizable profiles.',
+  stack: 'React / Node.js / Express.js / Socket.IO / MongoDB',
+  liveUrl: 'https://murmur-messenger.vercel.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/murmur-messenger',
+  mockupType: 'murmur-messenger',
+  fullDetails: 'Murmur Messenger is a full-stack real-time communication platform built to deliver a rich, interactive messaging experience. Developed with React, Node.js, Express.js, Socket.IO, MongoDB, and additional technologies, it supports account creation, personalized profiles, direct messaging, real-time message delivery, emoji interactions, media sharing, online and active status, group conversations, and group settings. The project focuses on responsive interactions, seamless communication, and a modern user experience.'
 },
 
 {
@@ -206,6 +220,20 @@ export default function AllProjects() {
   mockupType: 'sh-homepage',
   fullDetails: 'SH Homepage is a custom browser homepage designed to make everyday browsing more convenient. It provides quick search access and useful resources in one place, helping users get started quickly. Users can also set it as their browser homepage or startup page for a more personalized browsing experience.'
 },
+
+{
+  id: 'shn-shuvo',
+  badge: '~/builds/shn-shuvo',
+  category: 'PERSONAL PORTFOLIO',
+  title: 'Simple Portfolio',
+  description: 'A simple personal portfolio created for practice, featuring animated elements, a clean layout, and a smooth browsing experience.',
+  stack: 'HTML5 / CSS3 / JavaScript',
+  liveUrl: 'https://shn-shuvo.netlify.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/',
+  mockupType: 'shn-shuvo',
+  fullDetails: 'SHN Shuvo is a personal portfolio website created as a practice project while exploring web development. Built with HTML, CSS, and JavaScript, it combines a simple layout with animated elements and interactive details. The project represents an early step in developing frontend skills and experimenting with motion and personal website design.'
+},
+
 {
   id: 'select-xi',
   badge: '~/builds/select-xi',
@@ -245,7 +273,44 @@ export default function AllProjects() {
   fullDetails: 'Book Vibe is a responsive book discovery application built with React, Tailwind CSS, and React Router. Users can browse a collection of books, explore detailed book information, add titles to their Read List or Wishlist, and avoid duplicate entries. It also features React Toastify notifications and Local Storage persistence to keep saved book data available between visits.'
 },
 
+{
+  id: 'rinterio',
+  badge: '~/builds/rinterio',
+  category: 'ARCHITECTURE & INTERIOR DESIGN',
+  title: 'Rinterio',
+  description: 'A modern architecture website showcasing elegant design concepts, architectural projects, and contemporary living spaces.',
+  stack: 'HTML5 / Tailwind CSS',
+  liveUrl: 'https://resilient-cannoli-1ac0c0.netlify.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/assignment-three',
+  mockupType: 'rinterio',
+  fullDetails: 'Rinterio is an architecture-focused website designed to present contemporary architectural concepts and stylish living spaces through a clean, modern layout. Built with HTML and Tailwind CSS, the project emphasizes visual presentation, responsive design, and an elegant user experience.'
+},
 
+{
+  id: 'expense-tracker',
+  badge: '~/builds/expense-tracker',
+  category: 'PERSONAL FINANCE DASHBOARD',
+  title: 'Expense Tracker',
+  description: 'A personal finance management tool for tracking expenses, organizing financial records, and visualizing spending through interactive charts.',
+  stack: 'HTML5 / CSS3 / JavaScript',
+  liveUrl: 'https://et-1.netlify.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/expense-tracker',
+  mockupType: 'expense-tracker',
+  fullDetails: 'Expense Tracker is a personal finance application built with HTML, CSS, and JavaScript. It helps users manage expenses, organize financial records, review spending patterns, and understand their finances through charts, diagrams, and visual summaries. The project focuses on making everyday expense tracking and financial overview simple and accessible.'
+},
+
+{
+  id: 'renu-pet-care',
+  badge: '~/builds/renu-pet-care',
+  category: 'PET CARE WEBSITE',
+  title: 'Renu',
+  description: 'A friendly pet care website featuring a clean interface and a welcoming experience for pet lovers.',
+  stack: 'HTML5 / Tailwind CSS / JavaScript',
+  liveUrl: 'https://renu-sh.netlify.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/',
+  mockupType: 'renu-pet-care',
+  fullDetails: 'Renu is a pet care website designed to provide a welcoming online experience for pet lovers. Built with HTML, Tailwind CSS, and JavaScript, it focuses on clean layouts, responsive design, and an approachable interface for presenting pet care-related content and services.'
+}
 
   ];
 
@@ -557,8 +622,45 @@ export default function AllProjects() {
   </div>
 )}
 
+{project.mockupType === 'rinterio' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">RINTERIO / DESIGN</div>
+    <div className="text-[#9CA3AF]">space → structure → style</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ EXPLORE DESIGNS ]</div>
+  </div>
+)}
 
+{project.mockupType === 'murmur-messenger' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">MURMUR / CHAT</div>
+    <div className="text-[#9CA3AF]">connect → message → share</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ LIVE / CONNECTED ]</div>
+  </div>
+)}
 
+{project.mockupType === 'expense-tracker' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">EXPENSE / TRACKER</div>
+    <div className="text-[#9CA3AF]">track → analyze → manage</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ FINANCES / OVERVIEW ]</div>
+  </div>
+)}
+
+{project.mockupType === 'shn-shuvo' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">SHN / SHUVO</div>
+    <div className="text-[#9CA3AF]">learn → animate → create</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ VIEW PORTFOLIO ]</div>
+  </div>
+)}
+
+{project.mockupType === 'renu-pet-care' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">RENU / PET CARE</div>
+    <div className="text-[#9CA3AF]">care → comfort → happiness</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ HAPPY PAWS ]</div>
+  </div>
+)}
                     </div>
 
                     {/* Category */}

@@ -12,10 +12,12 @@ export default function Footer() {
     <footer className="w-full mb-[35px] mx-auto  flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-[#9BAFA2]">
       {/* Left Copyright Text */}
       <div className="tracking-[0.15em] mb-4 sm:mb-0">
-        © 2026 RYAN REYMER / KERNEL.DEV
+        © 2026 SIFAT HOSSEN / SHUVO.DEV
       </div>
 
-      {/* Right Back to Top Button */}
+    
+{/* back to top button */}
+
       <button
         onClick={scrollToTop}
         className="text-[#00FF88] tracking-[0.18em] hover:underline flex items-center gap-1.5 transition-colors cursor-pointer"

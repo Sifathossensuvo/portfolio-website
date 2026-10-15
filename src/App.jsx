@@ -15,7 +15,8 @@ import Idea from './components/Idea';
 import Faq from './components/Faq';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import AllProjects from './components/AllProjects'; // Notun dedicated archive page
+import AllProjects from './components/AllProjects';
+import ScrollToTop from "./components/ScrollToTop";
 
 function HomePage() {
   return (
@@ -37,6 +38,8 @@ function HomePage() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
+
       <div className="min-h-screen bg-[#070B09] text-[#E8F3EC] flex justify-center selection:bg-[#00FF88] selection:text-black">
         <div className="w-full max-w-[1170px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between min-h-screen">
           <div>

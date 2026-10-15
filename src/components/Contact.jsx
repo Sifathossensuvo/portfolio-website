@@ -1,6 +1,8 @@
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowUpRight } from 'react-icons/fi';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -11,10 +13,33 @@ export default function Contact() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    // Add your form submission logic here (e.g., EmailJS, Formspree, or API endpoint)
+
+    try {
+      await emailjs.send(
+        'service_t239ajk',
+        'template_n9olo5c',
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message
+        },
+        {
+          publicKey: 'Op7o9-NdKcQNcFuK8'
+        }
+      );
+
+      setSubmitted(true);
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      alert('Message send hoyni, bro! Please abar try kor.');
+    }
   };
 
   return (
@@ -178,7 +203,7 @@ export default function Contact() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full h-[40px] bg-[#00FF88] text-[#070B09] font-bold text-[13px]  px-6 rounded-[4px] flex items-center justify-center gap-2 hover:bg-[#00e078] transition-all shadow-[0_0_20px_rgba(0,255,136,0.2)]"
+                className="w-full h-[40px] bg-[#00FF88] text-[#070B09] font-bold text-[13px]  px-6 rounded-[4px] flex items-center justify-center gap-2 hover:bg-[#00e078] cursor-pointer transition-all shadow-[0_0_20px_rgba(0,255,136,0.2)]"
               >
                 Send message <FiArrowUpRight className="w-4 h-4 stroke-[2.5]" />
               </button>

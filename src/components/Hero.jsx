@@ -112,8 +112,8 @@ export default function Hero() {
             {/* Image Wrapper */}
             <div className="w-full h-[310px] rounded-[3px] overflow-hidden bg-[#050806] border border-[#131F18] relative">
               <img
-                src="https://framerusercontent.com/images/Q6s0wmv12xZpGQ5oQfdyyHssA.png?scale-down-to=512&width=1254&height=1254" 
-                alt="Ryan Reyner"
+                src="/src/assets/profile.jpg" 
+                alt="Sifat Hossen"
                 className="w-full h-full object-cover  group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#070B09] via-transparent to-transparent opacity-70" />

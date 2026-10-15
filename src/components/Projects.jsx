@@ -1,9 +1,8 @@
-
-
-import { FiArrowUpRight } from 'react-icons/fi';
-import React, { useRef } from "react";
+import { FiArrowUpRight, FiX, FiLayers, FiCpu, FiCheckCircle } from 'react-icons/fi';
+import React, { useRef, useState } from "react";
 import {
   motion,
+  AnimatePresence,
   useMotionValue,
   useSpring,
   useTransform,
@@ -12,42 +11,50 @@ import {
 import { Link } from "react-router-dom";
 
 import { ArrowUpRight } from "lucide-react";
+
 export default function Projects() {
   const projects = [
     {
-      id: 'cal',
-      badge: '~/builds/cal.com',
-      category: 'SCHEDULING INFRASTRUCTURE',
-      title: 'Cal.com',
-      description: 'An open-source scheduling platform: calendars, booking flows, and team availability.',
-      stack: 'Next.js / TypeScript / Prisma',
-      liveUrl: 'https://cal.com',
-      githubUrl: 'https://github.com/calcom/cal.com',
-      mockupType: 'calendar'
+      id: 'code-ninja-ai',
+      badge: '~/builds/code-ninja-ai',
+      category: 'AI CODING AGENT',
+      title: 'CODE NINJA AI',
+      description: 'A next-generation AI coding agent wrapped in an immersive hacker console, built for intelligent coding assistance and developer workflows.',
+      stack: 'TypeScript / React / Supabase / AI APIs',
+      liveUrl: 'https://code-ninja-ai.vercel.app',
+      githubUrl: 'https://github.com/Sifathossensuvo/code-ninja-ai',
+      mockupType: 'code-ninja-ai',
+      fullDetails: 'CODE NINJA AI is a hacker-console-inspired AI coding agent designed to deliver a powerful developer experience. Combining a terminal aesthetic, intelligent AI assistance, and a modern TypeScript-based architecture with Supabase integration, it brings coding workflows into a futuristic, developer-focused environment.'
     },
+
     {
-      id: 'medusa',
-      badge: '~/builds/medusa',
-      category: 'COMPOSABLE COMMERCE',
-      title: 'Medusa',
-      description: 'A modular commerce platform built around flexible APIs and merchant workflows.',
-      stack: 'Node.js / TypeScript / PostgreSQL',
-      liveUrl: 'https://medusajs.com',
-      githubUrl: 'https://github.com/medusajs/medusa',
-      mockupType: 'commerce'
+      id: 'md-younus-portfolio',
+      badge: '~/builds/md-younus-portfolio',
+      category: 'UI/UX DESIGN PORTFOLIO',
+      title: 'Md YOUNUS PORTFOLIO',
+      description: 'A visually immersive portfolio for a UI/UX designer, featuring elegant interfaces, fluid animations, and a premium interactive experience.',
+      stack: 'React / Node.js / Tailwind CSS / Framer Motion',
+      liveUrl: 'https://younus-uiux.vercel.app',
+      githubUrl: 'https://github.com/Sifathossensuvo/md-younus',
+      mockupType: 'younus-portfolio',
+      fullDetails: 'A complete, highly animated portfolio website designed for UI/UX designer Md Younus. Built with React, Node.js, Tailwind CSS, Framer Motion, and additional technologies, the project focuses on visual storytelling, polished interactions, smooth transitions, and a memorable user experience.'
     },
-    {
-      id: 'excalidraw',
-      badge: '~/builds/excalidraw',
-      category: 'COLLABORATIVE CANVAS',
-      title: 'Excalidraw',
-      description: 'A lightweight sketching canvas with a clear interface and local-first interaction.',
-      stack: 'React / TypeScript / Canvas',
-      liveUrl: 'https://excalidraw.com',
-      githubUrl: 'https://github.com/excalidraw/excalidraw',
-      mockupType: 'canvas'
-    }
+
+{
+  id: 'murmur-messenger',
+  badge: '~/builds/murmur-messenger',
+  category: 'REAL-TIME MESSAGING PLATFORM',
+  title: 'Murmur Messenger',
+  description: 'A full-stack real-time messaging platform featuring personal chats, group conversations, media sharing, emoji reactions, active status, and customizable profiles.',
+  stack: 'React / Node.js / Express.js / Socket.IO / MongoDB',
+  liveUrl: 'https://murmur-messenger.vercel.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/murmur-messenger',
+  mockupType: 'murmur-messenger',
+  fullDetails: 'Murmur Messenger is a full-stack real-time communication platform built to deliver a rich, interactive messaging experience. Developed with React, Node.js, Express.js, Socket.IO, MongoDB, and additional technologies, it supports account creation, personalized profiles, direct messaging, real-time message delivery, emoji interactions, media sharing, online and active status, group conversations, and group settings. The project focuses on responsive interactions, seamless communication, and a modern user experience.'
+},
   ];
+
+  const [selectedProject, setSelectedProject] = useState(null);
 
   return (
     <section id="projects" className="w-full max-w-[1120px] mx-auto  relative">
@@ -136,8 +143,9 @@ export default function Projects() {
           transition={{ duration: 0.5, delay: idx * 0.15, ease: "easeOut" }}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
+          onClick={() => setSelectedProject(project)}
           whileHover={{ y: -5, transition: { duration: 0.2 } }}
-          className="bg-[#0F1713] border border-[#294535] rounded-[6px] p-[24px] flex flex-col justify-between hover:border-[#00FF88]/40 hover:shadow-[0_0_30px_rgba(0,255,136,0.08)] transition-all group relative overflow-hidden"
+          className="bg-[#0F1713] border border-[#294535] rounded-[6px] p-[24px] flex flex-col justify-between hover:border-[#00FF88]/40 hover:shadow-[0_0_30px_rgba(0,255,136,0.08)] transition-all group relative overflow-hidden cursor-pointer"
         >
           <motion.div
             className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"
@@ -159,43 +167,47 @@ export default function Projects() {
                   {project.badge}
                 </span>
 
-                {/* Dynamic Mockup Content */}
-                {project.mockupType === 'calendar' && (
-                  <div className="w-full max-w-[200px] font-mono text-[10px] text-[#9CA3AF] space-y-2">
-                    <div className="flex justify-between text-[#E8F3EC] border-b border-[#16291F] pb-1">
-                      <span>[ MON</span>
-                      <span>TUE</span>
-                      <span>WED</span>
-                      <span>THU ]</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span>09:00</span>
-                      <span className="w-3 h-3 bg-[#00FF88]/30 rounded-[2px] animate-pulse"></span>
-                      <span>10:30</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span>11:00</span>
-                      <span className="w-3 h-3 bg-[#00FF88]/60 rounded-[2px]"></span>
-                      <span>14:00</span>
-                    </div>
-                  </div>
-                )}
+{project.mockupType === 'code-ninja-ai' && (
+  <div className="w-full font-mono text-[10px] text-[#00FF88] text-center space-y-2">
+    <div className="font-semibold tracking-wider">
+      AI / CODE
+    </div>
 
-                {project.mockupType === 'commerce' && (
-                  <div className="w-full max-w-[210px] font-mono text-[10px] text-[#9CA3AF] text-center space-y-2">
-                    <div className="text-[#E8F3EC] tracking-widest font-semibold">STORE / API</div>
-                    <div>products → cart → order</div>
-                    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded mt-1 font-bold tracking-wider">
-                      [ READY ]
-                    </div>
-                  </div>
-                )}
+    <div className="text-[#9CA3AF]">
+      prompt → generate → build
+    </div>
 
-                {project.mockupType === 'canvas' && (
-                  <div className="w-full max-w-[180px] h-[60px] border border-dashed border-[#00FF88]/40 rounded-lg flex items-center justify-center font-mono text-xs text-[#E8F3EC] tracking-widest relative">
-                    <span>| IDEA | → | SHIP |</span>
-                  </div>
-                )}
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">
+      [ ONLINE ]
+    </div>
+  </div>
+)}
+
+
+{project.mockupType === 'younus-portfolio' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">
+      YOUNUS / DESIGN
+    </div>
+
+    <div className="text-[#9CA3AF]">
+      design → animate → create
+    </div>
+
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">
+      [ EXPLORE ]
+    </div>
+  </div>
+)}
+
+
+{project.mockupType === 'murmur-messenger' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">MURMUR / CHAT</div>
+    <div className="text-[#9CA3AF]">connect → message → share</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ LIVE / CONNECTED ]</div>
+  </div>
+)}
               </div>
 
               {/* Category */}
@@ -220,7 +232,7 @@ export default function Projects() {
                 {project.stack}
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3" onClick={(e) => e.stopPropagation()}>
                 <a
                   href={project.liveUrl}
                   target="_blank"
@@ -272,6 +284,92 @@ export default function Projects() {
     />
   </Link>
 </div>
+
+      {/* Project Details Modal */}
+      <AnimatePresence>
+        {selectedProject && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedProject(null)}
+            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6"
+          >
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.95, opacity: 0, y: 20 }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-[#0A100E] border border-[#294535] rounded-xl p-6 sm:p-8 max-w-2xl w-full relative shadow-[0_0_50px_rgba(0,255,136,0.15)] max-h-[90vh] overflow-y-auto"
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setSelectedProject(null)}
+                className="absolute top-6 right-6 text-[#9CA3AF] hover:text-[#00FF88] transition-colors p-1"
+              >
+                <FiX className="w-6 h-6" />
+              </button>
+
+              {/* Modal Header Badge */}
+              <div className="font-mono text-xs text-[#00FF88] tracking-widest mb-2 flex items-center gap-2">
+                <FiLayers className="w-4 h-4" />
+                <span>{selectedProject.badge}</span>
+              </div>
+
+              {/* Title */}
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#E8F3EC] mb-3">
+                {selectedProject.title}
+              </h2>
+
+              {/* Category */}
+              <div className="font-mono text-xs text-[#9CA3AF] tracking-wider mb-6 pb-4 border-b border-[#16291F]">
+                CATEGORY: <span className="text-[#00FF88]">{selectedProject.category}</span>
+              </div>
+
+              {/* Detailed Description */}
+              <div className="space-y-4 mb-8">
+                <h4 className="font-mono text-xs text-[#00FF88] tracking-widest uppercase flex items-center gap-2">
+                  <FiCpu className="w-4 h-4" /> Architecture & Implementation
+                </h4>
+                <p className="text-[#9CA3AF] text-sm sm:text-base leading-[1.7]">
+                  {selectedProject.fullDetails}
+                </p>
+              </div>
+
+              {/* Tech Stack */}
+              <div className="mb-8 p-4 rounded-lg bg-[#050806] border border-[#16291F]">
+                <div className="font-mono text-xs text-[#00FF88] tracking-wider mb-2 flex items-center gap-2">
+                  <FiCheckCircle className="w-4 h-4" /> Tech Stack & Tools
+                </div>
+                <div className="text-sm font-mono text-[#E8F3EC]">
+                  {selectedProject.stack}
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex items-center gap-4">
+                <a
+                  href={selectedProject.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 bg-[#00FF88] text-[#070B09] font-bold text-sm py-3 px-6 rounded-lg flex items-center justify-center gap-2 hover:bg-[#00e078] transition-all shadow-[0_0_20px_rgba(0,255,136,0.2)]"
+                >
+                  Live preview <FiArrowUpRight className="w-4 h-4 stroke-[2.5]" />
+                </a>
+
+                <a
+                  href={selectedProject.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#0E1511] border border-[#294535] text-[#E8F3EC] font-bold text-sm py-3 px-6 rounded-lg flex items-center justify-center gap-2 hover:bg-[#152219] hover:border-[#00FF88]/40 transition-all"
+                >
+                  GitHub repository <FiArrowUpRight className="w-4 h-4 text-[#9CA3AF]" />
+                </a>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
     </section>
   );
