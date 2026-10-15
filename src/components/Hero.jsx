@@ -112,7 +112,7 @@ export default function Hero() {
             {/* Image Wrapper */}
             <div className="w-full h-[310px] rounded-[3px] overflow-hidden bg-[#050806] border border-[#131F18] relative">
               <img
-                src="/profile.jpg" 
+                src="profile.jpg" 
                 alt="Sifat Hossen"
                 className="w-full h-full object-cover  group-hover:scale-105 transition-transform duration-700 ease-out"
               />
