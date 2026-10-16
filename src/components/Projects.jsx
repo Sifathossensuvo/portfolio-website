@@ -14,24 +14,25 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Projects() {
   const projects = [
-    {
-      id: 'code-ninja-ai',
-      badge: '~/builds/code-ninja-ai',
-      category: 'AI CODING AGENT',
-      title: 'CODE NINJA AI',
-      description: 'A next-generation AI coding agent wrapped in an immersive hacker console, built for intelligent coding assistance and developer workflows.',
-      stack: 'TypeScript / React / Supabase / AI APIs',
-      liveUrl: 'https://code-ninja-ai.vercel.app',
-      githubUrl: 'https://github.com/Sifathossensuvo/code-ninja-ai',
-      mockupType: 'code-ninja-ai',
-      fullDetails: 'CODE NINJA AI is a hacker-console-inspired AI coding agent designed to deliver a powerful developer experience. Combining a terminal aesthetic, intelligent AI assistance, and a modern TypeScript-based architecture with Supabase integration, it brings coding workflows into a futuristic, developer-focused environment.'
-    },
+{
+  id: 'hishabflow',
+  badge: '~/products/hishabflow',
+  category: 'BUSINESS MANAGEMENT SOFTWARE',
+  title: 'HishabFlow',
+  description: 'An AI-powered business management platform for handling inventory, sales, customers, expenses, invoices, and business operations in one place.',
+  stack: 'React / Node.js / Express.js / MongoDB',
+  liveUrl: 'https://hishabflow.vercel.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/hishabflow-software',
+  mockupType: 'hishabflow',
+  fullDetails: 'HishabFlow is a full-stack business management software featuring inventory tracking, sales management, customer and supplier records, due payments, expense tracking, invoices, business reports, and business insights. Built with React, Node.js, Express.js, and MongoDB, it brings essential business operations together in one platform.'
+},
+
 
     {
       id: 'md-younus-portfolio',
       badge: '~/builds/md-younus-portfolio',
       category: 'UI/UX DESIGN PORTFOLIO',
-      title: 'Md YOUNUS PORTFOLIO',
+      title: 'Md Younus Portfolio',
       description: 'A visually immersive portfolio for a UI/UX designer, featuring elegant interfaces, fluid animations, and a premium interactive experience.',
       stack: 'React / Node.js / Tailwind CSS / Framer Motion',
       liveUrl: 'https://younus-uiux.vercel.app',
@@ -167,21 +168,21 @@ export default function Projects() {
                   {project.badge}
                 </span>
 
-{project.mockupType === 'code-ninja-ai' && (
-  <div className="w-full font-mono text-[10px] text-[#00FF88] text-center space-y-2">
-    <div className="font-semibold tracking-wider">
-      AI / CODE
-    </div>
 
+{project.mockupType === 'hishabflow' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">
+      HISHABFLOW / ERP
+    </div>
     <div className="text-[#9CA3AF]">
-      prompt → generate → build
+      business → finance → insights
     </div>
-
     <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">
-      [ ONLINE ]
+      [ SYSTEM ACTIVE ]
     </div>
   </div>
 )}
+
 
 
 {project.mockupType === 'younus-portfolio' && (

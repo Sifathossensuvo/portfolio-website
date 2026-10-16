@@ -7,18 +7,23 @@ export default function AllProjects() {
   // Extended dummy project pool to demonstrate Load More functionality (total 18 items)
   const masterProjects = [
 
+
+
 {
-  id: 'code-ninja-ai',
-  badge: '~/builds/code-ninja-ai',
-  category: 'AI CODING AGENT',
-  title: 'CODE NINJA AI',
-  description: 'A next-generation AI coding agent wrapped in an immersive hacker console, built for intelligent coding assistance and developer workflows.',
-  stack: 'TypeScript / React / Supabase / AI APIs',
-  liveUrl: 'https://code-ninja-ai.vercel.app',
-  githubUrl: 'https://github.com/Sifathossensuvo/code-ninja-ai',
-  mockupType: 'code-ninja-ai',
-  fullDetails: 'CODE NINJA AI is a hacker-console-inspired AI coding agent designed to deliver a powerful developer experience. Combining a terminal aesthetic, intelligent AI assistance, and a modern TypeScript-based architecture with Supabase integration, it brings coding workflows into a futuristic, developer-focused environment.'
+  id: 'hishabflow',
+  badge: '~/products/hishabflow',
+  category: 'BUSINESS MANAGEMENT SOFTWARE',
+  title: 'HishabFlow',
+  description: 'An AI-powered business management platform for handling inventory, sales, customers, expenses, invoices, and business operations in one place.',
+  stack: 'React / Node.js / Express.js / MongoDB',
+  liveUrl: 'https://hishabflow.vercel.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/hishabflow-software',
+  mockupType: 'hishabflow',
+  fullDetails: 'HishabFlow is a full-stack business management software featuring inventory tracking, sales management, customer and supplier records, due payments, expense tracking, invoices, business reports, and business insights. Built with React, Node.js, Express.js, and MongoDB, it brings essential business operations together in one platform.'
 },
+
+
+
 
 {
   id: 'md-younus-portfolio',
@@ -45,6 +50,20 @@ export default function AllProjects() {
   mockupType: 'murmur-messenger',
   fullDetails: 'Murmur Messenger is a full-stack real-time communication platform built to deliver a rich, interactive messaging experience. Developed with React, Node.js, Express.js, Socket.IO, MongoDB, and additional technologies, it supports account creation, personalized profiles, direct messaging, real-time message delivery, emoji interactions, media sharing, online and active status, group conversations, and group settings. The project focuses on responsive interactions, seamless communication, and a modern user experience.'
 },
+
+{
+  id: 'code-ninja-ai',
+  badge: '~/builds/code-ninja-ai',
+  category: 'AI CODING AGENT',
+  title: 'CODE NINJA AI',
+  description: 'A next-generation AI coding agent wrapped in an immersive hacker console, built for intelligent coding assistance and developer workflows.',
+  stack: 'TypeScript / React / Supabase / AI APIs',
+  liveUrl: 'https://code-ninja-ai.vercel.app',
+  githubUrl: 'https://github.com/Sifathossensuvo/code-ninja-ai',
+  mockupType: 'code-ninja-ai',
+  fullDetails: 'CODE NINJA AI is a hacker-console-inspired AI coding agent designed to deliver a powerful developer experience. Combining a terminal aesthetic, intelligent AI assistance, and a modern TypeScript-based architecture with Supabase integration, it brings coding workflows into a futuristic, developer-focused environment.'
+},
+
 
 {
   id: 'code-ninja-player',
@@ -719,6 +738,21 @@ export default function AllProjects() {
     </div>
     <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">
       [ SHOP DEVICES ]
+    </div>
+  </div>
+)}
+
+
+{project.mockupType === 'hishabflow' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">
+      HISHABFLOW / ERP
+    </div>
+    <div className="text-[#9CA3AF]">
+      business → finance → insights
+    </div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">
+      [ SYSTEM ACTIVE ]
     </div>
   </div>
 )}
