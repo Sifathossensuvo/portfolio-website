@@ -7,8 +7,6 @@ export default function AllProjects() {
   // Extended dummy project pool to demonstrate Load More functionality (total 18 items)
   const masterProjects = [
 
-
-
 {
   id: 'hishabflow',
   badge: '~/products/hishabflow',
@@ -21,8 +19,6 @@ export default function AllProjects() {
   mockupType: 'hishabflow',
   fullDetails: 'HishabFlow is a full-stack business management software featuring inventory tracking, sales management, customer and supplier records, due payments, expense tracking, invoices, business reports, and business insights. Built with React, Node.js, Express.js, and MongoDB, it brings essential business operations together in one platform.'
 },
-
-
 
 
 {

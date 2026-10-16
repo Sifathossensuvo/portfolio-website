@@ -268,7 +268,7 @@ export default function Projects() {
       {/* Footer Disclaimer */}
 <div className="flex flex-wrap items-center gap-3 text-[12px] text-[#9BAFA2] tracking-[0.11em]">
   <span>
-    OPEN-SOURCE SPOTLIGHT / READY TO VIEW MY ALL PROJECTS?
+    MY ALL WORLD CLASS PROJECTS / READY TO VIEW MY ALL PROJECTS?
   </span>
 
   <Link
