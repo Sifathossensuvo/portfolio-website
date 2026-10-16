@@ -22,16 +22,16 @@ export default function AllProjects() {
 
 
 {
-  id: 'md-younus-portfolio',
-  badge: '~/builds/md-younus-portfolio',
-  category: 'UI/UX DESIGN PORTFOLIO',
-  title: 'Md Younus Portfolio',
-  description: 'A visually immersive portfolio for a UI/UX designer, featuring elegant interfaces, fluid animations, and a premium interactive experience.',
-  stack: 'React / Node.js / Tailwind CSS / Framer Motion',
-  liveUrl: 'https://younus-uiux.vercel.app',
-  githubUrl: 'https://github.com/Sifathossensuvo/md-younus',
-  mockupType: 'younus-portfolio',
-  fullDetails: 'A complete, highly animated portfolio website designed for UI/UX designer Md Younus. Built with React, Node.js, Tailwind CSS, Framer Motion, and additional technologies, the project focuses on visual storytelling, polished interactions, smooth transitions, and a memorable user experience.'
+  id: 'code-ninja-ai',
+  badge: '~/builds/code-ninja-ai',
+  category: 'AI CODING AGENT',
+  title: 'Code Ninja Ai',
+  description: 'A next-generation AI coding agent wrapped in an immersive hacker console, built for intelligent coding assistance and developer workflows.',
+  stack: 'TypeScript / React / Supabase / AI APIs',
+  liveUrl: 'https://code-ninja-ai.vercel.app',
+  githubUrl: 'https://github.com/Sifathossensuvo/code-ninja-ai',
+  mockupType: 'code-ninja-ai',
+  fullDetails: 'CODE NINJA AI is a hacker-console-inspired AI coding agent designed to deliver a powerful developer experience. Combining a terminal aesthetic, intelligent AI assistance, and a modern TypeScript-based architecture with Supabase integration, it brings coding workflows into a futuristic, developer-focused environment.'
 },
 
 {
@@ -47,18 +47,7 @@ export default function AllProjects() {
   fullDetails: 'Murmur Messenger is a full-stack real-time communication platform built to deliver a rich, interactive messaging experience. Developed with React, Node.js, Express.js, Socket.IO, MongoDB, and additional technologies, it supports account creation, personalized profiles, direct messaging, real-time message delivery, emoji interactions, media sharing, online and active status, group conversations, and group settings. The project focuses on responsive interactions, seamless communication, and a modern user experience.'
 },
 
-{
-  id: 'code-ninja-ai',
-  badge: '~/builds/code-ninja-ai',
-  category: 'AI CODING AGENT',
-  title: 'Code Ninja Ai',
-  description: 'A next-generation AI coding agent wrapped in an immersive hacker console, built for intelligent coding assistance and developer workflows.',
-  stack: 'TypeScript / React / Supabase / AI APIs',
-  liveUrl: 'https://code-ninja-ai.vercel.app',
-  githubUrl: 'https://github.com/Sifathossensuvo/code-ninja-ai',
-  mockupType: 'code-ninja-ai',
-  fullDetails: 'CODE NINJA AI is a hacker-console-inspired AI coding agent designed to deliver a powerful developer experience. Combining a terminal aesthetic, intelligent AI assistance, and a modern TypeScript-based architecture with Supabase integration, it brings coding workflows into a futuristic, developer-focused environment.'
-},
+
 
 
 {

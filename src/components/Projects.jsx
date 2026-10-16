@@ -28,18 +28,18 @@ export default function Projects() {
 },
 
 
-    {
-      id: 'md-younus-portfolio',
-      badge: '~/builds/md-younus-portfolio',
-      category: 'UI/UX DESIGN PORTFOLIO',
-      title: 'Md Younus Portfolio',
-      description: 'A visually immersive portfolio for a UI/UX designer, featuring elegant interfaces, fluid animations, and a premium interactive experience.',
-      stack: 'React / Node.js / Tailwind CSS / Framer Motion',
-      liveUrl: 'https://younus-uiux.vercel.app',
-      githubUrl: 'https://github.com/Sifathossensuvo/md-younus',
-      mockupType: 'younus-portfolio',
-      fullDetails: 'A complete, highly animated portfolio website designed for UI/UX designer Md Younus. Built with React, Node.js, Tailwind CSS, Framer Motion, and additional technologies, the project focuses on visual storytelling, polished interactions, smooth transitions, and a memorable user experience.'
-    },
+   {
+  id: 'code-ninja-ai',
+  badge: '~/builds/code-ninja-ai',
+  category: 'AI CODING AGENT',
+  title: 'Code Ninja Ai',
+  description: 'A next-generation AI coding agent wrapped in an immersive hacker console, built for intelligent coding assistance and developer workflows.',
+  stack: 'TypeScript / React / Supabase / AI APIs',
+  liveUrl: 'https://code-ninja-ai.vercel.app',
+  githubUrl: 'https://github.com/Sifathossensuvo/code-ninja-ai',
+  mockupType: 'code-ninja-ai',
+  fullDetails: 'CODE NINJA AI is a hacker-console-inspired AI coding agent designed to deliver a powerful developer experience. Combining a terminal aesthetic, intelligent AI assistance, and a modern TypeScript-based architecture with Supabase integration, it brings coding workflows into a futuristic, developer-focused environment.'
+},
 
 {
   id: 'murmur-messenger',
@@ -185,18 +185,18 @@ export default function Projects() {
 
 
 
-{project.mockupType === 'younus-portfolio' && (
-  <div className="w-full font-mono text-[10px] text-center space-y-2">
-    <div className="text-[#E8F3EC] font-semibold tracking-wider">
-      YOUNUS / DESIGN
+{project.mockupType === 'code-ninja-ai' && (
+  <div className="w-full font-mono text-[10px] text-[#00FF88] text-center space-y-2">
+    <div className="font-semibold tracking-wider">
+      AI / CODE
     </div>
 
     <div className="text-[#9CA3AF]">
-      design → animate → create
+      prompt → generate → build
     </div>
 
     <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">
-      [ EXPLORE ]
+      [ ONLINE ]
     </div>
   </div>
 )}
