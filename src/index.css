@@ -21,6 +21,10 @@ body,
   overflow-x: clip;
 }
 
+.fontt{
+  font-family: "Space Grotesk", sans-serif;
+
+}
 
 /* ================================
    Shared Typography

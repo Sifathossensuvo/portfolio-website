@@ -2,27 +2,39 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function Experience() {
-  const experiences = [
-    {
-      period: '2026 — NOW',
-      title: 'Independent / Product engineer',
-      description: (<>
-      Partnering with small teams on web products, internal tools, <br /> and design systems. Scope, implementation, review, and handoff.
-      </>)
-    },
-    {
-      period: '2024 — 2025',
-      title: 'Studio practice / Full-stack development',
-      description: 'Built front-end patterns, API integrations, and release workflows through collaborative product projects.'
-    },
-    {
-      period: '2023 — 2024',
-      title: 'Computer science / Engineering foundation',
-       description: (<>
-     Algorithms, databases, distributed systems, and human- <br /> computer interaction. Continued learning through hands-on builds.
-      </>)
-    }
-  ];
+ const experiences = [
+  {
+    period: '2026 — NOW',
+    title: 'Independent / Full-Stack Developer',
+    description: (
+      <>
+        Building modern web applications, AI-powered tools, and digital
+        <br />
+        products. Focused on clean code and real-world impact.
+      </>
+    ),
+  },
+  {
+    period: '2024 — 2025',
+    title: 'Full-Stack Development / Product Building',
+    description: (
+      <>
+Built full-stack apps, REST APIs, real-time features, and responsive UIs through practical projects.
+      </>
+    ),
+  },
+  {
+    period: '2023 — 2024',
+    title: 'MERN Stack / AI Integration',
+    description: (
+      <>
+        React, Node.js, databases, and intelligent application workflows.
+        <br />
+        Continuously learning through practical, user-focused builds.
+      </>
+    ),
+  },
+];
 
   return (
     <section id="experience" className="w-full max-w-[1120px] mx-auto   relative">
@@ -87,20 +99,22 @@ export default function Experience() {
           className="bg-[#0F1713] border border-[#294535] rounded-[6px] p-[24px] flex flex-col space-y-[15px] hover:border-[#00FF88]/40 hover:shadow-[0_0_25px_rgba(0,255,136,0.07)] transition-all group"
         >
           <h3 className="sub-heading group-hover:text-[#00FF88] transition-colors">
-            Credentials & continuous learning
+            Technical Skills & Continuous Learning
           </h3>
           <p className="main-paragraph">
-            Cloud architecture · secure application design · accessible front-end development
+           Full-stack development · AI integration · API design · modern UI/UX
           </p>
           <div className=" font-mono text-[12px] text-[#9BAFA2] tracking-[-0.24px] flex flex-wrap items-center gap-2">
-            <span className=" ">FOCUS</span>
+            <span className=" ">BUILD</span>
             <span>/</span>
-            <span>CLOUD</span>
+            <span>INTEGRATE</span>
             <span>·</span>
-            <span>SECURITY</span>
+            <span>IMPROVE</span>
             <span>·</span>
-            <span>ACCESSIBILITY</span>
+            <span>INNOVATE</span>
           </div>
+
+
         </motion.div>
       </div>
 

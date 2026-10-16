@@ -55,7 +55,7 @@ export default function Navbar() {
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4 }}
-        className="font-['Space_Grotesk'] font-medium font-[Medium] text-[23px] [leading-trim:NONE] leading-[28.75px] tracking-[-0.46px] align-middle"
+        className="fontt font-medium font-[Medium] text-[23px] [leading-trim:NONE] leading-[28.75px] tracking-[-0.46px] align-middle"
       >
         <span className="text-[#00FF88]">&gt;</span> Shuvo.dev
       </motion.a></Link>
@@ -67,16 +67,16 @@ export default function Navbar() {
         transition={{ duration: 0.4, delay: 0.1 }}
         className="hidden md:flex items-center gap-8 font-['Space_Grotesk'] text-sm md:text-base font-medium"
       >
-        <a href="/#about" onClick={(e) => handleSectionClick(e, 'about')} className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">About</a>
-        <a href="/#stack" onClick={(e) => handleSectionClick(e, 'stack')} className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">Stack</a>
+        <a href="/#about" onClick={(e) => handleSectionClick(e, 'about')} className="text-[#00FF88] hover:opacity-85 transition-opacity fontt font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">About</a>
+        <a href="/#stack" onClick={(e) => handleSectionClick(e, 'stack')} className="text-[#00FF88] hover:opacity-85 fontt transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">Stack</a>
 <Link
   to="/projects"
   onClick={() => setIsMenuOpen(false)}
-  className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]"
+  className="text-[#00FF88] fontt hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]"
 >
   Projects
 </Link>
-        <a href="/#contact" onClick={(e) => handleSectionClick(e, 'contact')} className="text-[#00FF88] hover:opacity-85 transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">Contact</a>
+        <a href="/#contact" onClick={(e) => handleSectionClick(e, 'contact')} className="text-[#00FF88] hover:opacity-85 fontt transition-opacity font-normal font-[Regular] text-[14px] [leading-trim:NONE] leading-[19.2px] tracking-[-0.24px]">Contact</a>
       </motion.nav>
 
       {/* Let's talk button */}
@@ -91,7 +91,7 @@ export default function Navbar() {
           href="/#contact"
           onClick={(e) => handleSectionClick(e, 'contact')}
           style={{ width: '110px', height: '44px' }}
-          className="bg-[#00FF88] text-[#070B09] font-['Space_Grotesk'] font-bold font-[Bold] text-[13px] [leading-trim:NONE] leading-[15.6px] tracking-[-0.26px] align-middle rounded-[4px] flex items-center justify-center gap-1 hover:opacity-90 transition-opacity shadow-[0_0_15px_rgba(0,255,136,0.3)]"
+          className="bg-[#00FF88] text-[#070B09] fontt font-bold font-[Bold] text-[13px] [leading-trim:NONE] leading-[15.6px] tracking-[-0.26px] align-middle rounded-[4px] flex items-center justify-center gap-1 hover:opacity-90 transition-opacity shadow-[0_0_15px_rgba(0,255,136,0.3)]"
         >
           Let's talk <span className="text-xs">↗</span>
         </a>

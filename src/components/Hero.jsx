@@ -91,7 +91,7 @@ export default function Hero() {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 0.5, delay: 0.5 }}
-  className="font-['JetBrains_Mono'] font-normal text-[12px] leading-[19.2px] tracking-[-0.24px] text-[#9BAFA2] flex flex-wrap items-center gap-3"
+  className="fontt font-normal text-[12px] leading-[19.2px] tracking-[-0.24px] text-[#9BAFA2] flex flex-wrap items-center gap-3"
 >
   <span>BANGLADESH</span>
   <span className="">/</span>

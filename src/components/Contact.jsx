@@ -101,7 +101,7 @@ export default function Contact() {
           <div className="flex flex-col space-y-[18px] pt-[16px]">
             <div>
               <a
-                href="mailto:hello@example.com"
+                href="mailto:sifathossensuvo@gmail.com"
                 className="inline-flex items-center gap-1 bg-[#00FF88] text-[#070B09] font-bold text-[13px] py-[14px] px-5 rounded-[4px] hover:bg-[#00e078] transition-all "
               >
                 Send an email <FiArrowUpRight className="w-3 h-3 stroke-[2.5]" />
@@ -110,7 +110,7 @@ export default function Contact() {
 
             <div className="flex flex-col space-y-[15px] pt-4 font-mono text-sm">
               <a 
-                href="https://github.com" 
+                href="https://github.com/Sifathossensuvo" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-[#00FF88] hover:underline inline-flex items-center gap-1.5 w-fit"
@@ -118,7 +118,7 @@ export default function Contact() {
                 GitHub <FiArrowUpRight className="w-3.5 h-3.5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/sifat-hossen-shuvo-a1a53241b/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-[#00FF88] hover:underline inline-flex items-center gap-1.5 w-fit"
@@ -126,7 +126,7 @@ export default function Contact() {
                 LinkedIn <FiArrowUpRight className="w-3.5 h-3.5" />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://www.facebook.com/profile.php?id=61591768663580" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-[#00FF88] hover:underline inline-flex items-center gap-1.5 w-fit"
@@ -163,7 +163,7 @@ export default function Contact() {
                 <input
                   type="text"
                   required
-                  placeholder="Your name"
+                  placeholder="Your full name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full h-[40px] bg-[#17261E] border border-[#16291F] rounded-[4px] p-3 text-[#9BAFA2] placeholder-[#9BAFA2] text-[14px] focus:outline-none focus:border-[#00FF88] transition-colors"
@@ -178,7 +178,7 @@ export default function Contact() {
                 <input
                   type="email"
                   required
-                  placeholder="you@company.com"
+                  placeholder="you@gmail.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full h-[40px] bg-[#17261E] border border-[#16291F] rounded-[4px] p-3 text-[#9BAFA2] placeholder-[#9BAFA2] text-[14px] focus:outline-none focus:border-[#00FF88] transition-colors"
