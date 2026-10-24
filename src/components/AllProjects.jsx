@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 export default function AllProjects() {
   // Extended dummy project pool to demonstrate Load More functionality (total 18 items)
   const masterProjects = [
+// 
 
 {
   id: 'hishabflow',
@@ -19,6 +20,7 @@ export default function AllProjects() {
   mockupType: 'hishabflow',
   fullDetails: 'HishabFlow is a full-stack business management software featuring inventory tracking, sales management, customer and supplier records, due payments, expense tracking, invoices, business reports, and business insights. Built with React, Node.js, Express.js, and MongoDB, it brings essential business operations together in one platform.'
 },
+
 
 
 {
@@ -348,6 +350,20 @@ export default function AllProjects() {
 },
 
 
+{
+  id: 'verde-ember-restaurant',
+  badge: '~/projects/verde-ember-restaurant',
+  category: 'RESTAURANT LANDING PAGE',
+  title: 'Verde Ember Restaurant',
+  description: 'A modern, responsive restaurant landing page designed to showcase the dining experience, highlight signature dishes, and create an inviting online presence.',
+  stack: 'React / Tailwind CSS',
+  liveUrl: 'https://verde-ember-restaurant.vercel.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/verde-ember-restaurant',
+  mockupType: 'verde-ember-restaurant',
+  fullDetails: 'Verde Ember Restaurant is a modern restaurant landing page built with React and Tailwind CSS. It focuses on elegant presentation, responsive layouts, visually engaging food showcases, and a polished user experience to help create a memorable first impression for restaurant visitors.'
+},
+
+
   ];
 
   // Pagination state: display 12 items initially, load 12 more on click
@@ -607,6 +623,19 @@ export default function AllProjects() {
     <div className="text-[#E8F3EC] font-semibold tracking-wider">SHUVO / MEET</div>
     <div className="text-[#9CA3AF]">connect → collaborate → share</div>
     <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ JOIN MEETING ]</div>
+  </div>
+)}
+{project.mockupType === 'verde-ember-restaurant' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">
+      VERDE / EMBER
+    </div>
+    <div className="text-[#9CA3AF]">
+      dine → discover → savor
+    </div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">
+      [ EXPLORE MENU ]
+    </div>
   </div>
 )}
 
