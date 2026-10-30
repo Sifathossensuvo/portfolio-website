@@ -74,10 +74,23 @@ export default function AllProjects() {
   title: 'Error Shuvo',
   description: 'A world-class motivational portfolio featuring immersive 3D visuals, cinematic animations, and a stunning interactive experience.',
   stack: 'React / Tailwind CSS / Framer Motion / Three.js',
-  liveUrl: 'https://error-shuvo.vercel.appL',
+  liveUrl: 'https://error-shuvo.vercel.app',
   githubUrl: 'https://github.com/Sifathossensuvo/error-shuvo',
   mockupType: 'error-shuvo',
   fullDetails: 'Error Shuvo is a visually immersive personal portfolio designed to inspire through bold creative direction, stunning 3D visuals, and cinematic motion. Built with React, Tailwind CSS, Framer Motion, Three.js, and additional technologies, it combines motivational storytelling with an engaging, premium interactive experience.'
+},
+
+{
+  id: 'neel',
+  badge: '~/projects/neel',
+  category: 'ECOMMERCE / COLOR & LIFESTYLE',
+  title: 'Neel Landing Page',
+  description: 'A beautiful e-commerce landing page showcasing handcrafted textiles and hand-dyed lifestyle products.',
+  stack: 'React / Tailwind CSS / Framer Motion',
+  liveUrl: 'https://neel-landing-page-ecru.vercel.app',
+  githubUrl: 'https://github.com/Sifathossensuvo/neel-landing-page',
+  mockupType: 'neel',
+  fullDetails: 'Neel is a beautifully designed e-commerce landing page for a handcrafted textile and lifestyle brand. Built with React, Tailwind CSS, and Framer Motion, it features an elegant visual experience, smooth animations, responsive layouts, and product-focused sections. With the brand message "Dyed by hand. Made to live with.", the website highlights the beauty of handcrafted products through a clean and modern shopping experience.'
 },
 
 {
@@ -669,6 +682,14 @@ export default function AllProjects() {
     <div className="text-[#E8F3EC] font-semibold tracking-wider">SELECT / XI</div>
     <div className="text-[#9CA3AF]">earn coins → hire → build squad</div>
     <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ MANAGE TEAM ]</div>
+  </div>
+)}
+
+{project.mockupType === 'neel' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">NEEL / COLOR</div>
+    <div className="text-[#9CA3AF]">dyed by hand → made to live with</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ COLLECTION LIVE ]</div>
   </div>
 )}
 
