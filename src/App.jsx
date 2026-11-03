@@ -54,6 +54,7 @@ function App() {
           <Footer />
         </div>
       </div>
+      <Analytics />
     </Router>
   );
 }
