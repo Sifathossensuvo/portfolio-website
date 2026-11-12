@@ -6,8 +6,6 @@ import { Link } from 'react-router-dom';
 export default function AllProjects() {
   // Extended dummy project pool to demonstrate Load More functionality (total 18 items)
   const masterProjects = [
-// 
-
 
 {
   id: 'hishabflow',
@@ -49,9 +47,6 @@ export default function AllProjects() {
   mockupType: 'murmur-messenger',
   fullDetails: 'Murmur Messenger is a full-stack real-time communication platform built to deliver a rich, interactive messaging experience. Developed with React, Node.js, Express.js, Socket.IO, MongoDB, and additional technologies, it supports account creation, personalized profiles, direct messaging, real-time message delivery, emoji interactions, media sharing, online and active status, group conversations, and group settings. The project focuses on responsive interactions, seamless communication, and a modern user experience.'
 },
-
-
-
 
 {
   id: 'code-ninja-player',

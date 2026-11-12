@@ -5,9 +5,9 @@ export default function Stack() {
 const stackCards = [
   {
     num: '01',
-    title: 'Front-end',
+    title: 'Front-end & Wordpress',
     description:
-      'HTML · CSS · JavaScript · React · Tailwind CSS · NextJS. Responsive UI, reusable components, and animations.'
+      'Wordpress · Elementor · Woocommerce PHP · HTML · CSS · JavaScript · React · Tailwind CSS · NextJS  Responsive UI, reusable components, and animations.'
   },
   {
     num: '02',
@@ -127,7 +127,7 @@ const stackCards = [
                 transition={{ duration: 0.5, delay: idx * 0.08 }}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
-                className="bg-[#0F1713] border border-[#294535] h-[210px] rounded-[6px] p-[26px] flex flex-col justify-between hover:border-[#00FF88]/40 hover:shadow-[0_0_25px_rgba(0,255,136,0.07)] transition-all group relative overflow-hidden"
+                className="bg-[#0F1713] border border-[#294535] rounded-[6px] p-[26px] flex flex-col justify-between hover:border-[#00FF88]/40 hover:shadow-[0_0_25px_rgba(0,255,136,0.07)] transition-all group relative overflow-hidden"
               >
                 <motion.div
                   className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
