@@ -102,6 +102,19 @@ export default function AllProjects() {
 },
 
 {
+  id: 'nirog',
+  badge: '~/projects/nirog',
+  category: 'HEALTHCARE / DOCTOR BOOKING',
+  title: 'Nirog Health',
+  description: 'A modern healthcare platform helping patients find trusted doctors and book appointments with ease.',
+  stack: 'React / Tailwind CSS / Node.js',
+  liveUrl: 'https://nirog-healthcare.vercel.app',
+  githubUrl: 'https://github.com/Sifathossensuvo/nirog-healthcare',
+  mockupType: 'nirog',
+  fullDetails: 'Nirog Health is a modern healthcare platform designed to make accessing medical care easier and more convenient. Built with React, Tailwind CSS, and Node.js, it allows patients to find suitable doctors based on their specific health concerns, book appointments in advance, and access emergency calling options. With a patient-focused experience, the platform connects people with trusted healthcare professionals through a clean and user-friendly interface.'
+},
+
+{
   id: 'codespace',
   badge: '~/builds/codespace',
   category: 'DEVELOPER SOCIAL PLATFORM',
@@ -138,6 +151,20 @@ export default function AllProjects() {
   mockupType: 'ninja-portfolio',
   fullDetails: 'A highly animated, ninja-inspired personal portfolio featuring a bold red visual identity, immersive interactions, and cinematic motion effects. Built with HTML, CSS, JavaScript, and additional web technologies, the project combines creative storytelling with a distinctive visual experience.'
 },
+
+{
+  id: 'verde-ember-restaurant',
+  badge: '~/projects/verde-ember-restaurant',
+  category: 'RESTAURANT LANDING PAGE',
+  title: 'Verde Ember Restaurant',
+  description: 'A modern, responsive restaurant landing page designed to showcase the dining experience, highlight signature dishes, and create an inviting online presence.',
+  stack: 'React / Tailwind CSS',
+  liveUrl: 'https://verde-ember-restaurant.vercel.app/',
+  githubUrl: 'https://github.com/Sifathossensuvo/verde-ember-restaurant',
+  mockupType: 'verde-ember-restaurant',
+  fullDetails: 'Verde Ember Restaurant is a modern restaurant landing page built with React and Tailwind CSS. It focuses on elegant presentation, responsive layouts, visually engaging food showcases, and a polished user experience to help create a memorable first impression for restaurant visitors.'
+},
+
 {
   id: 'careerhub-bd',
   badge: '~/builds/careerhub',
@@ -359,18 +386,7 @@ export default function AllProjects() {
 },
 
 
-{
-  id: 'verde-ember-restaurant',
-  badge: '~/projects/verde-ember-restaurant',
-  category: 'RESTAURANT LANDING PAGE',
-  title: 'Verde Ember Restaurant',
-  description: 'A modern, responsive restaurant landing page designed to showcase the dining experience, highlight signature dishes, and create an inviting online presence.',
-  stack: 'React / Tailwind CSS',
-  liveUrl: 'https://verde-ember-restaurant.vercel.app/',
-  githubUrl: 'https://github.com/Sifathossensuvo/verde-ember-restaurant',
-  mockupType: 'verde-ember-restaurant',
-  fullDetails: 'Verde Ember Restaurant is a modern restaurant landing page built with React and Tailwind CSS. It focuses on elegant presentation, responsive layouts, visually engaging food showcases, and a polished user experience to help create a memorable first impression for restaurant visitors.'
-},
+
 
 
   ];
@@ -512,6 +528,14 @@ export default function AllProjects() {
   </div>
 )}
 
+
+{project.mockupType === 'nirog' && (
+  <div className="w-full font-mono text-[10px] text-center space-y-2">
+    <div className="text-[#E8F3EC] font-semibold tracking-wider">NIROG / HEALTH</div>
+    <div className="text-[#9CA3AF]">care → connect → recover</div>
+    <div className="inline-block px-3 py-1 bg-[#00FF88]/10 border border-[#00FF88]/30 text-[#00FF88] rounded font-bold tracking-wider">[ FIND A DOCTOR ]</div>
+  </div>
+)}
 
 {project.mockupType === 'younus-portfolio' && (
   <div className="w-full font-mono text-[10px] text-center space-y-2">
